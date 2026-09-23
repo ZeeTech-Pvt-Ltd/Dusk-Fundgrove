@@ -468,7 +468,7 @@ button {
 
 .hero {
   position: relative;
-  padding: 96px 0 72px;
+  padding: 64px 0 56px;
   background:
     radial-gradient(1000px 520px at 88% -18%, rgba(224, 138, 60, 0.14), transparent 60%),
     radial-gradient(900px 420px at 0% 110%, rgba(122, 95, 208, 0.1), transparent 60%),
@@ -490,7 +490,7 @@ button {
   color: var(--ink);
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 /* italic serif opening line - editorial contrast in a single colour */
@@ -505,7 +505,7 @@ button {
   display: block;
   width: 100%;
   height: 5px;
-  margin-top: 18px;
+  margin-top: 14px;
   background:
     linear-gradient(var(--seal), var(--seal)) top left / 68px 2px no-repeat,
     linear-gradient(var(--line-strong), var(--line-strong)) top left / 100% 1px no-repeat;
@@ -549,7 +549,7 @@ button {
   line-height: 1.7;
   color: var(--ink-soft);
   max-width: 560px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 /* single row of trust chips on desktop */
@@ -2351,7 +2351,7 @@ img.testi-card__avatar {
   }
 
   .hero {
-    padding: 64px 0 56px;
+    padding: 52px 0 44px;
   }
 
   .hero__trust {
