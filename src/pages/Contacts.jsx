@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import Icon from '../components/Icon'
 import RegistrationForm from '../components/RegistrationForm'
 import useMeta from '../hooks/useMeta'
-import { BreadcrumbJsonLd } from '../components/JsonLd'
 import { SITE_URL, SUPPORT_EMAIL, HERO } from '../data/content'
 
 const CONTACT_CARDS = [
@@ -35,7 +34,6 @@ export default function Contacts() {
 
   return (
     <>
-      <BreadcrumbJsonLd items={[{ name: 'Contact Us', slug: 'contact-us' }]} />
       <section className="page-hero">
         <div className="container">
           <h1 data-reveal>Contact Us</h1>

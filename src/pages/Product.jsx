@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import useMeta from '../hooks/useMeta'
 import Icon from '../components/Icon'
 import FinalCta from '../sections/FinalCta'
-import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '../components/JsonLd'
 import { SessionArt } from '../components/Art'
 import { SITE_URL, PRODUCT_PAGE } from '../data/content'
 
@@ -18,8 +17,6 @@ export default function Product() {
 
   return (
     <>
-      <BreadcrumbJsonLd items={[{ name: 'Product', slug: 'product' }]} />
-      <SoftwareApplicationJsonLd />
       <section className="page-hero">
         <div className="container">
           <h1 data-reveal>{PRODUCT_PAGE.hero.title}</h1>

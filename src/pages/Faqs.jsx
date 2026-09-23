@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import FaqList from '../components/FaqList'
 import useMeta from '../hooks/useMeta'
-import { BreadcrumbJsonLd, FaqJsonLd } from '../components/JsonLd'
 import { SITE_URL, FAQS } from '../data/content'
 
 export default function Faqs() {
@@ -15,8 +14,6 @@ export default function Faqs() {
 
   return (
     <>
-      <BreadcrumbJsonLd items={[{ name: 'FAQs', slug: 'faq' }]} />
-      <FaqJsonLd faqs={FAQS} />
       <section className="section section--alt">
         <div className="container">
           <div className="section-head">

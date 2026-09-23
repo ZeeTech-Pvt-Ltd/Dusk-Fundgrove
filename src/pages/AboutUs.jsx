@@ -1,7 +1,6 @@
 import useMeta from '../hooks/useMeta'
 import Icon from '../components/Icon'
 import FinalCta from '../sections/FinalCta'
-import { BreadcrumbJsonLd } from '../components/JsonLd'
 import { DashboardArt } from '../components/Art'
 import { SITE_URL, ABOUT_PAGE } from '../data/content'
 
@@ -16,7 +15,6 @@ export default function AboutUs() {
 
   return (
     <>
-      <BreadcrumbJsonLd items={[{ name: 'About Us', slug: 'about-us' }]} />
       <section className="page-hero">
         <div className="container">
           <h1 data-reveal>About Dusk Fundgrove</h1>
