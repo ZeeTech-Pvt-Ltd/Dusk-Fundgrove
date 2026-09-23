@@ -34,8 +34,8 @@ export default function useMeta({ title, description, canonical, keywords, robot
       document.querySelector('meta[name="robots"]')?.remove()
     }
     // og:image per route, falling back to the shared social image
-    upsertMeta('property', 'og:image', ogImage || `${SITE_URL}og-image-v2.png`)
-    upsertMeta('name', 'twitter:image', ogImage || `${SITE_URL}og-image-v2.png`)
+    upsertMeta('property', 'og:image', ogImage || `${SITE_URL}og-image-v3.png`)
+    upsertMeta('name', 'twitter:image', ogImage || `${SITE_URL}og-image-v3.png`)
 
     const existing = document.querySelector('link[rel="canonical"]')
     if (canonical) {
