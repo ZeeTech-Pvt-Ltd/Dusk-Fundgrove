@@ -340,15 +340,6 @@ button {
   display: none;
 }
 
-/* highlighted keyword - dusk horizon gradient, serif italic */
-.hl {
-  background: linear-gradient(100deg, var(--dusk-amber), var(--dusk-rose) 55%, var(--dusk-violet));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-style: italic;
-}
-
 /* ---------- header ---------- */
 
 .site-header {

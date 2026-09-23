@@ -23,9 +23,8 @@ export const NAV_LINKS = [
 ]
 
 export const HERO = {
+  // rendered as one line in a single ink colour
   title: ['When The Markets Quiet Down,', 'Dusk Fundgrove', 'Keeps On Trading'],
-  // `title` is [before, highlighted, after] - the highlighted word gets
-  // the dusk gradient.
   lead: 'Dusk Fundgrove is an AI-assisted trading platform for Bitcoin, Ethereum and 300+ markets. Set your targets before bed and let the engine run the night watch. Bank-grade custody, human support and an interface anyone can read.',
   trust: ['256-bit SSL encryption', '98% cold storage', '24/7 human support'],
   formTitle: 'Claim Your Free Account',
