@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
 import { ASSETS } from '../data/content'
 
 export default function Assets() {
@@ -28,10 +26,8 @@ export default function Assets() {
                 <div className="asset-row__tag">{asset.tag}</div>
               </div>
               <span className="asset-row__leader" aria-hidden="true" />
-              <Link className="asset-row__trade" to="/sign-up" aria-label={`Trade ${asset.name}`}>
-                Trade
-                <Icon name="arrow-right" size={13} />
-              </Link>
+              {/* plain ledger label, not a control - trading starts after sign up */}
+              <span className="asset-row__trade">Trade</span>
             </div>
           ))}
         </div>
