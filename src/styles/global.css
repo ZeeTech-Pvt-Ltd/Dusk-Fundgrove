@@ -1217,19 +1217,36 @@ button {
   color: rgba(247, 242, 230, 0.85);
 }
 
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+.testi-carousel {
+  overflow: hidden;
+}
+
+.testi-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.testi-track::-webkit-scrollbar {
+  display: none;
 }
 
 .testi-card {
   position: relative;
+  flex: 0 0 calc((100% - 44px) / 3);
+  scroll-snap-align: start;
+  margin-right: 22px;
   padding: 30px 28px 26px;
   background: var(--card);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
+}
+
+.testi-card:last-child {
+  margin-right: 0;
 }
 
 .testi-card__quote {
@@ -1295,6 +1312,53 @@ img.testi-card__avatar {
 .testi-card__place {
   font-size: 13px;
   color: var(--muted);
+}
+
+.testi-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.testi-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: var(--card);
+  color: var(--ink-soft);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.testi-arrow:hover {
+  background: var(--seal);
+  border-color: var(--seal);
+  color: var(--cream);
+}
+
+.testi-dots {
+  display: flex;
+  gap: 9px;
+}
+
+.testi-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: rgba(32, 28, 43, 0.18);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.testi-dot.is-active {
+  background: var(--seal);
+  transform: scale(1.25);
 }
 
 /* ---------- security ---------- */
@@ -2163,8 +2227,8 @@ img.testi-card__avatar {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .testi-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .testi-card {
+    flex-basis: calc((100% - 22px) / 2);
   }
 
   .faq-split {
@@ -2282,8 +2346,9 @@ img.testi-card__avatar {
     grid-template-columns: 1fr;
   }
 
-  .testi-grid {
-    grid-template-columns: 1fr;
+  .testi-card {
+    flex-basis: 100%;
+    margin-right: 0;
   }
 
   .calc__outputs {
