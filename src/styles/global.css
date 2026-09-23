@@ -30,7 +30,7 @@
   --white: #ffffff;
 
   /* type */
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-display: 'DM Serif Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Public Sans', system-ui, -apple-system, Arial, sans-serif;
   --font-mono: 'Roboto Mono', Consolas, 'Courier New', monospace;
 
@@ -87,6 +87,21 @@ h2 {
 h3 {
   font-size: 19px;
   letter-spacing: -0.005em;
+}
+
+/* DM Serif Display ships a single weight - never synthesize bold on
+   display-font elements, the face carries its own weight */
+h1,
+h2,
+h3,
+.logo__word,
+.asset-row__name,
+.ticker__symbol,
+.security__big strong,
+.nf-code,
+.step-card__num--center,
+.faq-item summary {
+  font-weight: 400;
 }
 
 p {
