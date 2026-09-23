@@ -789,25 +789,29 @@ button {
   min-width: 24px;
 }
 
+/* quiet text link, not a button - no pill so it never reads as
+   clickable-only-if-bordered */
 .asset-row__trade {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 12px;
-  font-weight: 700;
-  color: var(--ink-soft);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
   white-space: nowrap;
-  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  transition: color 0.18s ease, gap 0.18s ease;
+}
+
+.asset-row__trade:hover {
+  color: var(--seal);
+  gap: 9px;
 }
 
 .asset-row:hover .asset-row__trade {
-  border-color: var(--seal);
   color: var(--seal);
-  background: var(--seal-soft);
 }
 
 .assets-note {
@@ -2344,10 +2348,6 @@ img.testi-card__avatar {
 
   .asset-row__leader {
     display: none;
-  }
-
-  .asset-row__trade {
-    padding: 5px 10px;
   }
 
   .card-grid {
