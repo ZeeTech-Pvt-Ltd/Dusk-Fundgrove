@@ -487,17 +487,6 @@ button {
   overflow: hidden;
 }
 
-/* setting sun over the horizon, drawn in SVG by Hero.jsx */
-.hero__sun {
-  position: absolute;
-  top: -70px;
-  right: -90px;
-  width: 480px;
-  height: 480px;
-  pointer-events: none;
-  opacity: 0.9;
-}
-
 .hero-grid {
   position: relative;
   display: grid;
@@ -2300,13 +2289,6 @@ img.testi-card__avatar {
 
   .hero {
     padding: 64px 0 56px;
-  }
-
-  .hero__sun {
-    width: 340px;
-    height: 340px;
-    top: -50px;
-    right: -110px;
   }
 
   .hero__trust {
