@@ -32,11 +32,14 @@ export function FaqJsonLd({ faqs }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
 }
 
-// The trading platform described as a Service, with the site's rating.
+// The trading platform, typed as Service + Product: Google review
+// snippets reject Service as a single parent type ("Invalid object
+// type for field <parent_node>"), so the multi-type form is required.
+// Rating values must be numeric, not strings.
 export function ServiceJsonLd() {
   const data = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
+    '@type': ['Service', 'Product'],
     serviceType: 'AI-powered trading platform',
     name: SITE_NAME,
     url: SITE_URL,
@@ -46,15 +49,15 @@ export function ServiceJsonLd() {
     areaServed: { '@type': 'Country', name: 'Australia' },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: RATING.score,
-      reviewCount: RATING.meta.match(/\d+/)?.[0] || '0',
-      bestRating: '5',
+      ratingValue: Number(RATING.score),
+      reviewCount: Number(RATING.meta.match(/\d+/)?.[0] || 0),
+      bestRating: 5,
     },
     offers: {
       '@type': 'Offer',
-      price: '0',
+      price: 250,
       priceCurrency: 'AUD',
-      description: 'Free account registration',
+      description: 'Minimum first deposit',
     },
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
@@ -73,11 +76,11 @@ export function SoftwareApplicationJsonLd() {
       'Trade Bitcoin, Ethereum and 300+ assets with AI-driven analytics, portfolio tracking and bank-grade security.',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: RATING.score,
-      reviewCount: RATING.meta.match(/\d+/)?.[0] || '0',
-      bestRating: '5',
+      ratingValue: Number(RATING.score),
+      reviewCount: Number(RATING.meta.match(/\d+/)?.[0] || 0),
+      bestRating: 5,
     },
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'AUD' },
+    offers: { '@type': 'Offer', price: 250, priceCurrency: 'AUD' },
     provider: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
