@@ -10,8 +10,8 @@
       <stop offset="0.5" stop-color="#d2556e"/>
       <stop offset="1" stop-color="#7a5fd0"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.88" cy="0.1" r="0.7">
-      <stop offset="0" stop-color="#e08a3c" stop-opacity="0.25"/>
+    <radialGradient id="glow" cx="0.9" cy="0.08" r="0.6">
+      <stop offset="0" stop-color="#e08a3c" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#faf6ec" stop-opacity="0"/>
     </radialGradient>
   </defs>
@@ -21,19 +21,18 @@
   <!-- horizon line -->
   <line x1="0" y1="330" x2="1200" y2="330" stroke="#cdc2a8" stroke-width="2"/>
 
-  <!-- setting sun -->
-  <path d="M760 330 A 180 180 0 0 1 1120 330 Z" fill="url(#duskDisc)" opacity="0.9"/>
+  <!-- setting sun, cropped by the right edge so it stays clear of the headline -->
+  <path d="M1000 330 A 150 150 0 0 1 1300 330 Z" fill="url(#duskDisc)" opacity="0.9"/>
   <g stroke="#e08a3c" stroke-width="4" stroke-linecap="round" opacity="0.5">
-    <line x1="880" y1="352" x2="880" y2="382"/>
-    <line x1="960" y1="356" x2="960" y2="396"/>
-    <line x1="800" y1="356" x2="800" y2="396"/>
+    <line x1="1120" y1="352" x2="1120" y2="380"/>
+    <line x1="1180" y1="356" x2="1180" y2="394"/>
   </g>
-  <g stroke="#201c2b" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6">
-    <path d="M1000 220 q10 -10 20 0 q10 -10 20 0"/>
-    <path d="M1060 190 q7 -7 14 0 q7 -7 14 0"/>
+  <g stroke="#201c2b" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.55">
+    <path d="M760 200 q10 -10 20 0 q10 -10 20 0"/>
+    <path d="M820 172 q7 -7 14 0 q7 -7 14 0"/>
   </g>
 
-  <!-- candlestick silhouettes -->
+  <!-- candlestick silhouettes along the bottom -->
   <g stroke="#201c2b" stroke-width="4">
     <line x1="80" y1="560" x2="80" y2="430"/>
     <line x1="160" y1="580" x2="160" y2="390"/>
@@ -56,11 +55,11 @@
   </g>
 
   <!-- rising line -->
-  <path d="M60 500 C 200 470, 320 360, 460 300 S 620 200, 720 170"
+  <path d="M60 500 C 200 470, 320 360, 460 300 S 620 200, 700 175"
         fill="none" stroke="#7a5fd0" stroke-width="5" stroke-linecap="round"/>
   <g fill="#7a5fd0" stroke="#faf6ec" stroke-width="4">
     <rect x="446" y="286" width="28" height="28" rx="5"/>
-    <rect x="706" y="156" width="28" height="28" rx="5"/>
+    <rect x="686" y="161" width="28" height="28" rx="5"/>
   </g>
 
   <!-- brand block -->
@@ -74,8 +73,8 @@
     <text x="88" y="52" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="52" fill="#201c2b">Dusk Fundgrove</text>
   </g>
 
-  <text x="80" y="300" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="600" font-size="66" fill="url(#duskText)">When The Markets Quiet Down,</text>
-  <text x="80" y="386" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="66" fill="#201c2b">We Keep On Trading.</text>
+  <text x="80" y="292" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="600" font-size="62" fill="url(#duskText)">When The Markets Quiet Down,</text>
+  <text x="80" y="378" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="62" fill="#201c2b">We Keep On Trading.</text>
 
   <text x="80" y="470" font-family="Arial, sans-serif" font-size="26" fill="#6d6679">Bitcoin · Ethereum · 300+ markets · 256-bit encryption, 98% cold storage.</text>
 
