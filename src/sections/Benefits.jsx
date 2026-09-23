@@ -16,10 +16,10 @@ export default function Benefits() {
         <div className="bento-grid">
           {BENEFITS.items.map((item, i) => (
             <div
-              className={`card${item.wide ? ' card--wide' : ''}`}
+              className="card"
               key={item.title}
               data-reveal
-              style={{ transitionDelay: `${(i % 3) * 70}ms` }}
+              style={{ transitionDelay: `${(i % 4) * 60}ms` }}
             >
               <span className="card__icon">
                 <Icon name={item.icon} size={24} strokeWidth={1.9} />

@@ -231,13 +231,6 @@ export const BENEFITS = {
       icon: 'bolt',
       title: 'The Night Watch Engine',
       text: 'AI scans global markets around the clock and surfaces signals with a 92% accuracy rate. The overnight session is where it earns its keep, so you can sleep through it.',
-      wide: true,
-    },
-    {
-      icon: 'chart',
-      title: 'Pro Charting Suite',
-      text: '80+ indicators, clean defaults and charts that stay readable on a phone at 1am. No terminal degree required.',
-      wide: true,
     },
     {
       icon: 'copy',
@@ -253,6 +246,11 @@ export const BENEFITS = {
       icon: 'device',
       title: 'One Account, Every Screen',
       text: 'Desktop, tablet and mobile stay perfectly in sync.',
+    },
+    {
+      icon: 'chart',
+      title: 'Pro Charting Suite',
+      text: '80+ indicators, clean defaults and charts that stay readable on a phone at 1am. No terminal degree required.',
     },
     {
       icon: 'headset',
