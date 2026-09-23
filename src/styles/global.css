@@ -716,6 +716,13 @@ button {
   box-shadow: var(--shadow-card);
 }
 
+/* single-column variant for sections without artwork */
+.about-grid--single {
+  grid-template-columns: 1fr;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 /* ---------- assets (receipt rows) ---------- */
 
 .assets-rows {
