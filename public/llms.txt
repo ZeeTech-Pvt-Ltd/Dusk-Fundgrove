@@ -1,0 +1,18 @@
+# Dusk Fundgrove
+
+> Dusk Fundgrove is an AI-assisted multi-asset trading platform for Bitcoin, Ethereum and 300+ markets, built for Australian investors. The platform runs an evening trading desk with AI signals, bank-grade custody and 24/7 human support.
+
+## Key pages
+
+- [Home](https://dusk-fundgrove-platform.com/): The evening desk. AI signals, custody and support for trading around the clock.
+- [Product](https://dusk-fundgrove-platform.com/product): Charts, signals, portfolio tracking and an order workspace in one platform.
+- [About Us](https://dusk-fundgrove-platform.com/about-us): The story, values and principles behind Dusk Fundgrove.
+- [Contact Us](https://dusk-fundgrove-platform.com/contact-us): Email support from real analysts, available 24/7.
+- [FAQs](https://dusk-fundgrove-platform.com/faq): Answers about accounts, security, assets, deposits and withdrawals.
+- [Sign Up](https://dusk-fundgrove-platform.com/sign-up): Create a free account in under two minutes.
+
+## Legal
+
+- [Privacy Policy](https://dusk-fundgrove-platform.com/privacy): How Dusk Fundgrove collects, uses and protects personal data.
+- [Terms of Use](https://dusk-fundgrove-platform.com/terms): The terms that govern use of the website and platform.
+- [Risk Disclosure](https://dusk-fundgrove-platform.com/risk-disclosure): Trading cryptocurrencies, forex and CFDs involves substantial risk of loss.
