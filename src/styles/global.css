@@ -902,12 +902,16 @@ button {
 
 .step-card h3 {
   margin: 14px 0 10px;
+  /* keep heading and text in the content column - auto-placement
+     would otherwise drop the paragraph into the icon column */
+  grid-column: 2;
 }
 
 .step-card p {
   color: var(--muted);
   font-size: 15px;
   max-width: 560px;
+  grid-column: 2;
 }
 
 /* timeline on the dusk band (About Us page) */
