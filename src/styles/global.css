@@ -869,6 +869,7 @@ button {
   box-shadow: var(--shadow-card);
 }
 
+/* numbered seal badge pinned to the icon circle */
 .step-card__num {
   position: absolute;
   top: -8px;
@@ -885,6 +886,18 @@ button {
   font-size: 12px;
   font-weight: 700;
   z-index: 2;
+}
+
+/* centered variant: the number IS the icon content (About Us page) */
+.step-card__num--center {
+  position: static;
+  width: auto;
+  height: auto;
+  background: none;
+  color: inherit;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .step-card h3 {
@@ -906,11 +919,6 @@ button {
   background: rgba(247, 242, 230, 0.07);
   border-color: rgba(224, 138, 60, 0.45);
   color: var(--dusk-amber);
-}
-
-.section--dark .step-card__num {
-  background: var(--dusk-amber);
-  color: var(--dusk-deep);
 }
 
 .section--dark .step-card p {
@@ -1222,32 +1230,11 @@ button {
 }
 
 /* dotted leader between label and value */
-.ov-row__value::before {
-  content: '';
-  display: block;
+.ov-row__leader {
   flex: 1;
-}
-
-.ov-row {
-  position: relative;
-}
-
-.ov-row::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 9px;
+  min-width: 24px;
   border-bottom: 1px dotted var(--line-strong);
-  z-index: 0;
-}
-
-.ov-row__label,
-.ov-row__value {
-  position: relative;
-  z-index: 1;
-  background: var(--card);
-  padding-bottom: 2px;
+  transform: translateY(-4px);
 }
 
 .ov-row__value {
@@ -1255,7 +1242,7 @@ button {
   font-size: 16.5px;
   color: var(--ink);
   text-align: right;
-  flex: 1;
+  flex: none;
 }
 
 /* ---------- testimonials (letters) ---------- */

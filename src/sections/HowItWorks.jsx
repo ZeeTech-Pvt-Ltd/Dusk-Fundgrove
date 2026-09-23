@@ -17,8 +17,8 @@ export default function HowItWorks() {
             <div className="step-card" key={step.title} data-reveal style={{ transitionDelay: `${i * 80}ms` }}>
               <span className="step-card__icon">
                 <Icon name={step.icon} size={26} strokeWidth={1.7} />
+                <span className="step-card__num">0{i + 1}</span>
               </span>
-              <div className="step-card__num">0{i + 1}</div>
               <h3>{step.title}</h3>
               <p>{step.text}</p>
             </div>

@@ -16,6 +16,7 @@ export default function Overview() {
           {OVERVIEW.rows.map((row) => (
             <div className="ov-row" key={row.label}>
               <div className="ov-row__label">{row.label}</div>
+              <span className="ov-row__leader" aria-hidden="true" />
               <div className="ov-row__value">{row.value}</div>
             </div>
           ))}

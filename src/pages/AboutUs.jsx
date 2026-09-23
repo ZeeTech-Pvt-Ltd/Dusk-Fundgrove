@@ -94,7 +94,9 @@ export default function AboutUs() {
           <div className="steps-grid">
             {ABOUT_PAGE.difference.items.map((item, i) => (
               <div className="step-card" key={item.title} data-reveal style={{ transitionDelay: `${i * 80}ms` }}>
-                <div className="step-card__num">0{i + 1}</div>
+                <span className="step-card__icon">
+                  <span className="step-card__num step-card__num--center">0{i + 1}</span>
+                </span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
