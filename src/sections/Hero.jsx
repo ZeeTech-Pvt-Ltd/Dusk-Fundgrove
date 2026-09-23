@@ -17,7 +17,7 @@ export default function Hero() {
             {/* Above-the-fold elements render instantly (no reveal fade):
                 the animation would delay FCP/LCP on mobile. */}
             <h1>
-              <em>{HERO.title[0]}</em> {HERO.title.slice(1).join(' ')}
+              {HERO.title.join(' ')}
             </h1>
 
             <p className="hero__lead">

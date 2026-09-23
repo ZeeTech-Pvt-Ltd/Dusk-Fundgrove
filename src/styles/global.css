@@ -29,8 +29,8 @@
   --down: #b93a2d;
   --white: #ffffff;
 
-  /* type */
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  /* type - one simple sans face for headings and body */
+  --font-display: 'Public Sans', system-ui, -apple-system, Arial, sans-serif;
   --font-body: 'Public Sans', system-ui, -apple-system, Arial, sans-serif;
   --font-mono: 'Roboto Mono', Consolas, 'Courier New', monospace;
 
@@ -491,12 +491,6 @@ button {
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 700;
   margin-bottom: 16px;
-}
-
-/* italic serif opening line - editorial contrast in a single colour */
-.hero h1 em {
-  font-style: italic;
-  font-weight: 600;
 }
 
 /* double rule under the headline, like the inner page titles */
