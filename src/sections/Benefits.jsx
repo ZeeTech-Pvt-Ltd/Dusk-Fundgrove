@@ -3,7 +3,7 @@ import { BENEFITS } from '../data/content'
 
 export default function Benefits() {
   return (
-    <section className="section section--alt" id="benefits">
+    <section className="section" id="benefits">
       <div className="container">
         <div className="section-head">
           <span className="kicker" data-reveal>
@@ -13,9 +13,14 @@ export default function Benefits() {
           <p data-reveal>{BENEFITS.text}</p>
         </div>
 
-        <div className="card-grid">
+        <div className="bento-grid">
           {BENEFITS.items.map((item, i) => (
-            <div className="card" key={item.title} data-reveal style={{ transitionDelay: `${(i % 3) * 70}ms` }}>
+            <div
+              className={`card${item.wide ? ' card--wide' : ''}`}
+              key={item.title}
+              data-reveal
+              style={{ transitionDelay: `${(i % 3) * 70}ms` }}
+            >
               <span className="card__icon">
                 <Icon name={item.icon} size={24} strokeWidth={1.9} />
               </span>

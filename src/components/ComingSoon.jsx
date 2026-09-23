@@ -15,7 +15,7 @@ export default function ComingSoon({ title, description }) {
           dusk-fundgrove-platform.com. Check back soon.
         </p>
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link className="btn btn--green" to="/">
+          <Link className="btn btn--ink" to="/">
             Back to home
           </Link>
           <Link className="btn btn--ghost" to="/sign-up">

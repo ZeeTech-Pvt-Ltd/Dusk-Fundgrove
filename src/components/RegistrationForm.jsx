@@ -323,7 +323,7 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
           </div>
         )}
 
-        <button className="btn btn--green btn--block" type="submit" disabled={status === STATUS.loading}>
+        <button className="btn btn--ink btn--block" type="submit" disabled={status === STATUS.loading}>
           {status === STATUS.loading ? 'Submitting…' : 'Open an account'}
         </button>
         <p className="form-trust">

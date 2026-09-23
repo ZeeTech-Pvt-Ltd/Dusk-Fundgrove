@@ -45,12 +45,12 @@ export default function SignIn() {
             {submitted && (
               <div className="auth-note" role="status">
                 Account access is activated by our team after your registration is verified. If you
-                already registered, check your email for your activation link - or contact{' '}
+                already registered, check your email for your activation link. Or contact{' '}
                 <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.
               </div>
             )}
 
-            <button className="btn btn--green btn--block" type="submit">
+            <button className="btn btn--ink btn--block" type="submit">
               Sign In
             </button>
           </form>

@@ -1,94 +1,84 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <radialGradient id="glow" cx="0.85" cy="0" r="0.95">
-      <stop offset="0" stop-color="#9a6bff" stop-opacity="0.3"/>
-      <stop offset="1" stop-color="#070b12" stop-opacity="0"/>
+    <linearGradient id="duskDisc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e08a3c"/>
+      <stop offset="0.55" stop-color="#d2556e"/>
+      <stop offset="1" stop-color="#7a5fd0"/>
+    </linearGradient>
+    <linearGradient id="duskText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e08a3c"/>
+      <stop offset="0.5" stop-color="#d2556e"/>
+      <stop offset="1" stop-color="#7a5fd0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.88" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#e08a3c" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#faf6ec" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="greenText" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4dffb8"/>
-      <stop offset="0.55" stop-color="#00e58f"/>
-      <stop offset="1" stop-color="#00a868"/>
-    </linearGradient>
-    <linearGradient id="duskBar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffb35c"/>
-      <stop offset="0.5" stop-color="#ff6b8a"/>
-      <stop offset="1" stop-color="#9a6bff"/>
-    </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="#0a0f18"/>
+  <rect width="1200" height="630" fill="#faf6ec"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <!-- starfield -->
-  <g fill="#e8eef7">
-    <circle cx="140" cy="90" r="2.2" opacity="0.7"/>
-    <circle cx="340" cy="60" r="1.6" opacity="0.5"/>
-    <circle cx="560" cy="110" r="2" opacity="0.6"/>
-    <circle cx="780" cy="70" r="1.6" opacity="0.45"/>
-    <circle cx="1000" cy="100" r="2.2" opacity="0.65"/>
-    <circle cx="220" cy="170" r="1.4" opacity="0.4"/>
-    <circle cx="1080" cy="180" r="1.6" opacity="0.5"/>
-    <circle cx="900" cy="150" r="1.4" opacity="0.4"/>
-    <circle cx="60" cy="220" r="1.5" opacity="0.45"/>
+  <!-- horizon line -->
+  <line x1="0" y1="330" x2="1200" y2="330" stroke="#cdc2a8" stroke-width="2"/>
+
+  <!-- setting sun -->
+  <path d="M760 330 A 180 180 0 0 1 1120 330 Z" fill="url(#duskDisc)" opacity="0.9"/>
+  <g stroke="#e08a3c" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <line x1="880" y1="352" x2="880" y2="382"/>
+    <line x1="960" y1="356" x2="960" y2="396"/>
+    <line x1="800" y1="356" x2="800" y2="396"/>
+  </g>
+  <g stroke="#201c2b" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6">
+    <path d="M1000 220 q10 -10 20 0 q10 -10 20 0"/>
+    <path d="M1060 190 q7 -7 14 0 q7 -7 14 0"/>
   </g>
 
-  <!-- chart grid -->
-  <g stroke="rgba(148,163,190,0.08)" stroke-width="1">
-    <path d="M0 260 H1200 M0 310 H1200 M0 360 H1200 M0 410 H1200 M0 460 H1200 M0 510 H1200"/>
+  <!-- candlestick silhouettes -->
+  <g stroke="#201c2b" stroke-width="4">
+    <line x1="80" y1="560" x2="80" y2="430"/>
+    <line x1="160" y1="580" x2="160" y2="390"/>
+    <line x1="240" y1="545" x2="240" y2="355"/>
+    <line x1="320" y1="575" x2="320" y2="330"/>
+  </g>
+  <g fill="#201c2b">
+    <rect x="66" y="436" width="28" height="120" rx="4"/>
+    <rect x="146" y="396" width="28" height="180" rx="4"/>
+    <rect x="226" y="361" width="28" height="180" rx="4"/>
+    <rect x="306" y="336" width="28" height="235" rx="4"/>
+  </g>
+  <g stroke="#b93a2d" stroke-width="4">
+    <line x1="400" y1="540" x2="400" y2="300"/>
+    <line x1="480" y1="515" x2="480" y2="265"/>
+  </g>
+  <g fill="#b93a2d">
+    <rect x="386" y="306" width="28" height="230" rx="4"/>
+    <rect x="466" y="271" width="28" height="240" rx="4"/>
   </g>
 
-  <!-- candlestick series rising to the right -->
-  <g stroke="#00e58f" stroke-width="4">
-    <line x1="70" y1="580" x2="70" y2="500"/>
-    <line x1="170" y1="600" x2="170" y2="470"/>
-    <line x1="270" y1="570" x2="270" y2="430"/>
-    <line x1="370" y1="590" x2="370" y2="400"/>
-    <line x1="470" y1="560" x2="470" y2="370"/>
-    <line x1="570" y1="530" x2="570" y2="330"/>
-  </g>
-  <g fill="#00e58f">
-    <rect x="58" y="505" width="24" height="72" rx="4"/>
-    <rect x="158" y="475" width="24" height="122" rx="4"/>
-    <rect x="258" y="435" width="24" height="132" rx="4"/>
-    <rect x="358" y="405" width="24" height="182" rx="4"/>
-    <rect x="458" y="375" width="24" height="182" rx="4"/>
-    <rect x="558" y="335" width="24" height="192" rx="4"/>
-  </g>
-  <g stroke="#ff6b8a" stroke-width="4">
-    <line x1="670" y1="520" x2="670" y2="440"/>
-    <line x1="770" y1="490" x2="770" y2="420"/>
-  </g>
-  <g fill="#ff6b8a">
-    <rect x="658" y="445" width="24" height="72" rx="4"/>
-    <rect x="758" y="425" width="24" height="62" rx="4"/>
-  </g>
-  <g stroke="#4dffb8" stroke-width="4">
-    <line x1="870" y1="470" x2="870" y2="300"/>
-    <line x1="970" y1="440" x2="970" y2="250"/>
-    <line x1="1070" y1="400" x2="1070" y2="210"/>
-  </g>
-  <g fill="#4dffb8">
-    <rect x="858" y="305" width="24" height="162" rx="4"/>
-    <rect x="958" y="255" width="24" height="182" rx="4"/>
-    <rect x="1058" y="215" width="24" height="182" rx="4"/>
+  <!-- rising line -->
+  <path d="M60 500 C 200 470, 320 360, 460 300 S 620 200, 720 170"
+        fill="none" stroke="#7a5fd0" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#7a5fd0" stroke="#faf6ec" stroke-width="4">
+    <rect x="446" y="286" width="28" height="28" rx="5"/>
+    <rect x="706" y="156" width="28" height="28" rx="5"/>
   </g>
 
   <!-- brand block -->
-  <g transform="translate(80 76)">
-    <rect x="0" y="0" width="60" height="60" rx="12" fill="#0e1420" stroke="rgba(0,229,143,0.5)" stroke-width="3"/>
-    <line x1="19" y1="16" x2="19" y2="42" stroke="#4dffb8" stroke-width="3" stroke-linecap="round"/>
-    <line x1="30" y1="25" x2="30" y2="46" stroke="#4dffb8" stroke-width="3" stroke-linecap="round"/>
-    <line x1="41" y1="11" x2="41" y2="34" stroke="#4dffb8" stroke-width="3" stroke-linecap="round"/>
-    <rect x="14" y="22" width="10" height="14" rx="2.5" fill="#00e58f"/>
-    <rect x="25" y="32" width="10" height="11" rx="2.5" fill="#00c27b"/>
-    <rect x="36" y="16" width="10" height="12" rx="2.5" fill="#4dffb8"/>
-    <text x="84" y="50" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="52" fill="#e8eef7">Dusk Fundgrove</text>
+  <g transform="translate(80 60)">
+    <rect x="0" y="0" width="64" height="64" rx="14" fill="#fffdf6" stroke="#cdc2a8" stroke-width="3"/>
+    <line x1="10" y1="44" x2="54" y2="44" stroke="#201c2b" stroke-width="2.5"/>
+    <path d="M14 44 A 18 18 0 0 1 50 44 Z" fill="url(#duskDisc)"/>
+    <line x1="14" y1="26" x2="14" y2="18" stroke="#e08a3c" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="32" y1="14" x2="32" y2="8" stroke="#d2556e" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="50" y1="26" x2="50" y2="18" stroke="#7a5fd0" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="88" y="52" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="52" fill="#201c2b">Dusk Fundgrove</text>
   </g>
 
-  <text x="80" y="330" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="url(#greenText)">Trade The Night Session.</text>
-  <text x="80" y="414" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="#e8eef7">Your Desk Never Closes.</text>
+  <text x="80" y="300" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="600" font-size="66" fill="url(#duskText)">When The Markets Quiet Down,</text>
+  <text x="80" y="386" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="66" fill="#201c2b">We Keep On Trading.</text>
 
-  <text x="80" y="496" font-family="Arial, sans-serif" font-size="27" fill="#8a94a8">Bitcoin · Ethereum · 300+ assets - 256-bit encryption, 98% cold storage.</text>
+  <text x="80" y="470" font-family="Arial, sans-serif" font-size="26" fill="#6d6679">Bitcoin · Ethereum · 300+ markets · 256-bit encryption, 98% cold storage.</text>
 
-  <rect x="80" y="534" width="300" height="12" rx="6" fill="url(#duskBar)"/>
-  <rect x="400" y="534" width="140" height="12" rx="6" fill="#00e58f"/>
+  <rect x="80" y="508" width="300" height="12" rx="6" fill="url(#duskText)"/>
+  <rect x="400" y="508" width="140" height="12" rx="6" fill="#b93a2d"/>
 </svg>

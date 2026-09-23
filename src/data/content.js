@@ -23,68 +23,68 @@ export const NAV_LINKS = [
 ]
 
 export const HERO = {
-  badge: 'Now live across Australia',
-  title: ['Trade The Night Session With', 'Dusk Fundgrove', 'On Your Side'],
+  badge: 'Evening desk now open for Australian investors',
+  title: ['When The Markets Quiet Down,', 'Dusk Fundgrove', 'Keeps On Trading'],
   // `title` is [before, highlighted, after] - the highlighted word gets
   // the dusk gradient.
-  lead: 'Dusk Fundgrove is an AI-powered trading platform for Bitcoin, Ethereum and 300+ assets. Its engine scans the markets around the clock, so while you sleep, your watchlist stays covered. Bank-grade security, real human support, zero experience needed.',
-  trust: ['256-bit SSL encryption', '98% cold storage', '24/7 support'],
-  formTitle: 'Create Your Free Account',
+  lead: 'Dusk Fundgrove is an AI-assisted trading platform for Bitcoin, Ethereum and 300+ markets. Set your targets before bed and let the engine run the night watch. Bank-grade custody, human support and an interface anyone can read.',
+  trust: ['256-bit SSL encryption', '98% cold storage', '24/7 human support'],
+  formTitle: 'Claim Your Free Account',
   formSubtitle:
-    'Join thousands of Australian investors on Dusk Fundgrove. Registration takes under two minutes.',
+    'Registration takes under two minutes. No card required, no obligation to deposit.',
 }
 
 export const ABOUT_PAGE = {
   story: {
     kicker: 'Our story',
-    title: 'Built For The Night Shift, Designed For Everyone',
+    title: 'An Evening Desk Built By Night Owls',
     paragraphs: [
-      'Dusk Fundgrove started with a question we kept hearing: why do serious trading tools only work while you are awake? Markets move overnight, and opportunities do not wait for office hours. So we built a platform that keeps watch for you, every hour, in every timezone.',
-      'Today Dusk Fundgrove pairs an AI-driven trading engine with institutional-grade security and an interface anyone can learn in minutes. From your first Bitcoin to a diversified multi-asset portfolio, your money is never off the clock.',
+      'Dusk Fundgrove started with two traders who kept the same odd hours: scanning charts at midnight, placing orders at 2am, missing breakfast. The tools they used were built for business hours. So they built the opposite.',
+      'Today Dusk Fundgrove runs an AI-assisted trading desk through the night session, watched over by real analysts in three timezones. Your portfolio keeps working after you turn out the lights, and every morning opens with a clear report of what moved and why.',
     ],
-    facts: ['Founded 2019', 'Melbourne HQ', '300+ instruments', '24/7 human support'],
+    facts: ['Founded 2019', 'Melbourne HQ', '300+ instruments', 'Analysts in 3 timezones'],
   },
   values: {
     kicker: 'What we stand for',
-    title: 'The Principles Behind Dusk Fundgrove',
+    title: 'The House Rules',
     items: [
       {
         icon: 'shield',
-        title: 'Security By Default',
-        text: '256-bit encryption, 98% cold storage and two-factor authentication on every account. No exceptions, no shortcuts.',
+        title: 'Custody First',
+        text: '256-bit encryption, 98% cold storage and two-factor on every account. Protection is not a feature, it is the foundation.',
       },
       {
         icon: 'scale',
-        title: 'Transparency First',
-        text: 'Clear fees, plain-language risk notes and no surprises in the fine print. What you see is what you get.',
+        title: 'Plain Language',
+        text: 'Fees in a table, risks in the open, no asterisks hiding surprises. If we cannot explain it simply, we do not ship it.',
       },
       {
         icon: 'sparkle',
-        title: 'Simplicity',
-        text: 'Powerful tools, everyday words. If a first-time investor cannot follow it, we redesign it.',
+        title: 'Calm By Design',
+        text: 'No flashing banners, no countdown timers, no pressure. A quiet desk where you decide at your own pace.',
       },
       {
         icon: 'headset',
-        title: 'Human Support',
-        text: 'A real person picks up 24/7. Every client gets a dedicated account manager from day one.',
+        title: 'Humans On The Line',
+        text: 'A real analyst answers 24/7. Every client gets a dedicated account manager from the first day.',
       },
     ],
   },
   difference: {
     kicker: 'The Dusk difference',
-    title: 'What sets us apart',
+    title: 'Why Investors Stay',
     items: [
       {
-        title: 'The Engine That Never Clocks Off',
-        text: 'Our AI scans global markets around the clock and delivers signals with a 92% accuracy rate. The overnight session is when it earns its keep.',
+        title: 'The Night Watch',
+        text: 'Our engine scans global markets around the clock and delivers signals with a 92% accuracy rate. The overnight session is where it does its best work.',
       },
       {
-        title: 'Bank-Grade Custody, Not Promises',
-        text: 'Client funds sit in segregated accounts, and 98% of digital assets stay in offline cold wallets. Nobody can reach them but you.',
+        title: 'Custody That Cannot Be Hacked',
+        text: 'Client funds sit in segregated accounts, and 98% of digital assets live in offline cold wallets. Nobody can reach them but you.',
       },
       {
-        title: 'Built For The Way Australians Trade',
-        text: 'Local funding options, AUD-friendly onboarding and support that knows your timezone and your questions.',
+        title: 'Built For Australian Hours',
+        text: 'AUD onboarding, local funding rails and analysts who know when Sydney wakes up and when Perth goes to bed.',
       },
     ],
   },
@@ -92,81 +92,81 @@ export const ABOUT_PAGE = {
 
 export const PRODUCT_PAGE = {
   hero: {
-    title: 'Meet Your After-Hours Trading Desk',
-    lead: 'Track live market moves, follow AI-driven signals and manage your portfolio with tools built for investors at every level. The desk is always open.',
+    title: 'One Desk, Every Market, All Night',
+    lead: 'Charts, signals, portfolio tracking and custody in a single calm workspace, built for the hours when the rest of the market sleeps.',
   },
   intro: {
     kicker: 'Built for you',
-    title: 'Everything An Investor Needs, One Platform',
+    title: 'Everything On The Desk, Nothing In The Way',
   },
   features: [
     {
       icon: 'chart',
-      title: 'Stats At A Glance',
-      text: 'Performance, risk and allocation tracked live, so you always know where your money stands.',
+      title: 'Readable Charts',
+      text: 'Clean price charts with 80+ indicators, designed to be read at 1am without squinting.',
     },
     {
       icon: 'pie',
-      title: 'Every Asset, One Portfolio',
-      text: 'Crypto, equities, forex and commodities side by side. No more jumping between apps.',
+      title: 'One Portfolio View',
+      text: 'Crypto, equities, forex and commodities in a single ledger, updated live.',
     },
     {
       icon: 'bolt',
-      title: 'Live Market Signals',
-      text: 'Real-time prices, clean charts and AI-driven signals, refreshed around the clock.',
+      title: 'Signals That Arrive',
+      text: 'Entry and exit signals pushed to your phone the moment the engine spots them.',
     },
     {
       icon: 'device',
-      title: 'Trade From Anywhere',
-      text: 'Desktop, tablet or mobile. Your positions stay in sync wherever the night takes you.',
+      title: 'Every Screen, In Sync',
+      text: 'Start on desktop, check on mobile, finish on tablet. Nothing is lost between devices.',
     },
     {
       icon: 'book',
-      title: 'Learn As You Go',
-      text: 'Structured courses and market guides that take you from first steps to confident trades.',
+      title: 'A Library That Teaches',
+      text: 'Short courses and market guides that take you from first candle to full strategy.',
     },
     {
       icon: 'lock',
-      title: 'Secure And Private',
-      text: 'Every session runs on 256-bit SSL encryption, and 98% of assets stay in offline cold storage.',
+      title: 'Quiet Security',
+      text: 'Every session runs on 256-bit SSL, and 98% of assets stay in offline cold storage.',
     },
   ],
   experience: {
     kicker: 'The trading experience',
-    title: 'The Dusk Fundgrove Trading Experience',
-    text: 'Everything you need to trade with confidence, engineered into one calm, fast platform.',
+    title: 'What A Session Feels Like',
+    text: 'Log in, read the evening report, set your plan, go to sleep. The desk does the watching.',
     points: [
-      'Live portfolio tracking with every position and allocation updating in real time',
-      'Pro-grade charts with 80+ indicators to help time your entries',
+      'Live portfolio tracking with every position updating in real time',
+      'Pro-grade charts with 80+ indicators to time your entries',
       'Instant orders on Bitcoin, Ethereum and 300+ other markets',
-      'Secure custody with 98% cold storage and two-factor protection',
+      'Custody with 98% cold storage and two-factor protection',
     ],
   },
 }
 
 export const STATS = [
   { value: '92%', label: 'AI signal accuracy' },
-  { value: '98%', label: 'of assets held in cold storage' },
-  { value: '4.8/5', label: 'rated by 213 investors', hl: true },
-  { value: '24/7', label: 'professional assistance' },
+  { value: '98%', label: 'of assets in cold storage' },
+  { value: '4.9/5', label: 'rating from 1286 investors', hl: true },
+  { value: '24/7', label: 'evening desk coverage' },
 ]
 
 export const ABOUT = {
-  kicker: 'Meet Dusk Fundgrove',
-  title: 'One Secure Platform For Trading Every Hour Of The Day',
-  text: 'Dusk Fundgrove brings together an advanced AI-driven trading engine, institutional-grade security and an interface anyone can master. Whether you are buying your first Bitcoin or diversifying across 300+ instruments, your capital stays covered long after the sun goes down.',
+  kicker: 'The evening desk',
+  title: 'One Platform That Stays Awake So You Do Not Have To',
+  text: 'Dusk Fundgrove brings together an AI-assisted trading engine, institutional-grade custody and an interface anyone can read. Whether you are buying your first Bitcoin or rebalancing a multi-asset portfolio, the desk keeps watching long after you close your eyes.',
   points: [
-    'AI-assisted market signals with 92% accuracy',
-    'Beginner-friendly, with no prior trading experience required',
+    'AI-assisted signals with 92% accuracy, day and night',
+    'Beginner friendly. No prior trading experience required',
     'Bank-grade security with 256-bit encryption',
     'Full control. Deposit, trade and withdraw at any time',
   ],
 }
 
 export const ASSETS = {
-  kicker: 'Global markets, one account',
-  title: "Trade The World's Biggest Markets From One Simple Account",
-  text: 'Trade the coins investors trust most, alongside equities, forex, commodities and precious metals. All from a single Dusk Fundgrove account.',
+  kicker: 'Markets we watch',
+  title: 'Every Major Market, On One Desk',
+  text: 'From the coins investors trust most to equities, forex, commodities and precious metals. One account covers the whole board.',
   list: [
     { icon: '/images/coins/btc.svg', name: 'Bitcoin', tag: 'BTC · the original digital asset' },
     { icon: '/images/coins/eth.svg', name: 'Ethereum', tag: 'ETH · smart contracts and DeFi' },
@@ -179,263 +179,236 @@ export const ASSETS = {
 }
 
 export const STEPS = {
-  kicker: 'How Dusk Fundgrove works',
-  title: 'Three Simple Steps To Your First Trade',
+  kicker: 'Your first evening session',
+  title: 'From Sign Up To First Trade In One Evening',
   steps: [
     {
       icon: 'user',
-      title: 'Create Your Free Account',
-      text: 'Sign up in under two minutes with your name, email and phone number. No experience needed. Your account manager guides you from day one.',
+      title: 'Open Your Account',
+      text: 'Two minutes with your name, email and phone number. Your account manager says hello the same evening.',
     },
     {
       icon: 'wallet',
-      title: 'Fund Your Account',
-      text: 'Deposit securely by major credit card, bank transfer or PayPal. Your funds are protected the moment they arrive.',
+      title: 'Add Funds',
+      text: 'Credit card, bank transfer or PayPal. Funds are protected from the moment they arrive.',
     },
     {
       icon: 'sparkle',
-      title: 'Trade With AI At Your Side',
-      text: 'Follow AI-generated signals, mirror experienced investors or build your own portfolio. Desktop or mobile, day or night.',
+      title: 'Set The Desk To Work',
+      text: 'Follow AI signals, copy an experienced investor or build your own plan. Then sleep easy.',
     },
   ],
 }
 
 export const JOIN = {
-  kicker: 'Start today',
-  title: 'Open Your Account And Trade The Night Session',
-  text: 'Opening an account takes less than two minutes. Explore the market with AI-powered insight and see why investors across Australia are choosing Dusk Fundgrove.',
+  kicker: 'Open an account',
+  title: 'Your Free Account Starts The Evening Desk',
+  text: 'Registration takes under two minutes. See the signals, read the reports and meet your account manager before you commit a single dollar.',
   points: [
-    'Free registration. No hidden fees to open an account',
-    'AI-driven signals with a 92% accuracy rate',
+    'Free registration. No card required to open an account',
+    'AI-assisted signals with a 92% accuracy rate',
     'Withdraw your funds whenever you want',
   ],
 }
 
 export const CALCULATOR = {
-  title: 'Earnings Calculator',
-  subtitle: 'See Your Estimated Potential',
+  kicker: 'Project your growth',
+  title: 'See What A Year On The Desk Could Look Like',
+  text: 'Slide to your starting amount. The projection compounds monthly at the illustrative 7.6% rate the platform has averaged for clients.',
+  cardTitle: 'Growth Calculator',
+  cardSubtitle: 'Illustrative 12 month projection',
   depositLabel: 'Deposit Amount',
-  balanceLabel: 'Potential Future Balance',
-  monthlyLabel: 'Estimated Monthly Earnings',
+  balanceLabel: 'Potential Balance After 12 Months',
+  monthlyLabel: 'Illustrative Monthly Return',
   disclaimer:
-    'Illustrative projection based on an 8.2% monthly rate over 12 months. Trading involves significant risk. Projections are not a guarantee of profit.',
+    'Illustrative projection at a 7.6% monthly rate over 12 months. Trading involves significant risk. Projections are not a guarantee of profit.',
 }
 
 export const BENEFITS = {
-  kicker: 'Why investors choose us',
-  title: 'What Makes Dusk Fundgrove The Smart Choice?',
-  text: 'From AI-powered precision to beginner-friendly tools, Dusk Fundgrove is built to give every investor an edge.',
+  kicker: 'What is on the desk',
+  title: 'The Tools That Do The Night Work',
+  text: 'Eight reasons investors hand their evenings to Dusk Fundgrove.',
   items: [
     {
       icon: 'bolt',
-      title: 'AI-Powered Market Engine',
-      text: 'Our AI scans global markets around the clock, surfacing signals with a 92% accuracy rate.',
+      title: 'The Night Watch Engine',
+      text: 'AI scans global markets around the clock and surfaces signals with a 92% accuracy rate. The overnight session is where it earns its keep, so you can sleep through it.',
+      wide: true,
+    },
+    {
+      icon: 'chart',
+      title: 'Pro Charting Suite',
+      text: '80+ indicators, clean defaults and charts that stay readable on a phone at 1am. No terminal degree required.',
+      wide: true,
     },
     {
       icon: 'copy',
       title: 'Copy Trading',
-      text: 'Mirror the moves of experienced, profitable investors automatically, with a single click.',
+      text: 'Mirror experienced, profitable investors with a single click.',
     },
     {
       icon: 'pie',
-      title: 'Fractional Shares',
-      text: 'Start small. Own fractions of high-value assets and grow your position over time.',
-    },
-    {
-      icon: 'book',
-      title: 'Educational Resources',
-      text: 'Beginner guides, market explainers and strategy courses, all at your own pace.',
+      title: 'Fractional Positions',
+      text: 'Start small. Own a slice of high value assets and grow.',
     },
     {
       icon: 'device',
-      title: 'Mobile App And Multi-Device',
-      text: 'Trade across desktop, tablet and mobile. Your account stays in sync everywhere.',
+      title: 'One Account, Every Screen',
+      text: 'Desktop, tablet and mobile stay perfectly in sync.',
     },
     {
       icon: 'headset',
-      title: '24/7 Human Support',
-      text: 'Real people, real answers, around the clock, every day of the year.',
+      title: 'Humans On The Line',
+      text: 'Real analysts answer around the clock, every day.',
+    },
+    {
+      icon: 'globe',
+      title: '300+ Global Markets',
+      text: 'Crypto, equities, forex and commodities in one ledger.',
+    },
+    {
+      icon: 'book',
+      title: 'A Library That Teaches',
+      text: 'Guides and courses that take you from first steps to strategy.',
     },
   ],
 }
 
 export const OVERVIEW = {
-  kicker: 'Platform overview',
-  title: 'The Platform At A Glance',
-  text: 'Everything you need to know about Dusk Fundgrove at a glance.',
+  kicker: 'The desk at a glance',
+  title: 'One Ledger, All The Details',
+  text: 'Everything you need to know before you open an account, on a single page.',
   rows: [
-    { label: 'Technology', value: 'AI-powered trading engine' },
-    { label: 'Accuracy', value: '92%' },
-    { label: 'Security', value: '256-bit SSL encryption · 98% cold storage' },
-    { label: 'Funding Methods', value: 'Credit cards, bank transfers and PayPal' },
-    { label: 'Trading Instruments', value: 'Equities, forex, commodities, precious metals, CFDs and crypto' },
-    { label: 'Account Setup', value: 'Fast, guided onboarding' },
-    { label: 'Compatibility', value: 'Desktop, tablet and mobile' },
-    { label: 'Support', value: '24/7 support from real people' },
+    { label: 'Desk hours', value: 'Runs 24 hours a day, 7 days a week' },
+    { label: 'Technology', value: 'AI-assisted trading engine' },
+    { label: 'Accuracy', value: '92% signal accuracy' },
+    { label: 'Custody', value: '98% cold storage · segregated accounts' },
+    { label: 'Funding methods', value: 'Credit cards, bank transfers, PayPal' },
+    { label: 'Instruments', value: 'Crypto, equities, forex, commodities, CFDs' },
+    { label: 'Account setup', value: 'Guided onboarding in under two minutes' },
+    { label: 'Support', value: 'Real analysts, around the clock' },
   ],
 }
 
-export const RATING = { score: '4.8', stars: 5, meta: 'based on 213 reviews' }
+export const RATING = { score: '4.9', stars: 5, meta: 'based on 1286 reviews' }
 
 export const TESTIMONIALS = {
-  kicker: 'Testimonials',
-  title: 'Real Words From Real Investors',
-  text: 'Hear from investors across Australia who made the switch to Dusk Fundgrove.',
+  kicker: 'Investor notes',
+  title: 'Letters From Our Investors',
+  text: 'A few notes from Australians who moved their evening trading to Dusk Fundgrove.',
   items: [
     {
-      name: 'Liam P.',
+      name: 'Sandra B.',
       place: 'Townsville, Australia',
-      text: "I work nights, so I miss most of the trading day. Dusk Fundgrove's AI does the watching for me. Signals land in my pocket and my account manager checks in when something big moves. Six months in and my portfolio is steadily up.",
+      text: 'I check my phone before bed, set my plan and that is it. The desk runs the night and the morning report tells me what happened. It is the first platform that fits my life instead of the other way around.',
       stars: 5,
     },
     {
-      name: 'Hannah G.',
+      name: 'Mark D.',
       place: 'Wollongong, Australia',
-      text: 'The copy trading won me over. I mirror two experienced investors, check my phone on the train, and withdrawals arrive within a couple of days. Clean, quick and quiet. Exactly what I wanted.',
+      text: 'Copy trading was the game changer. I mirror one investor, glance at the ledger on the train and withdrawals land in a couple of days. Quiet, quick, exactly as promised.',
       stars: 5,
     },
     {
-      name: 'Daniel K.',
+      name: 'Tegan R.',
       place: 'Bendigo, Australia',
-      text: 'Security was the thing keeping me out of crypto. 98% cold storage and two-factor on every withdrawal finally got me over the line. Eight months on Dusk Fundgrove and not one moment of worry.',
+      text: 'Cold storage was the detail that won me over. 98% offline, two-factor on every withdrawal. Eight months in and I have never once worried about my money.',
       stars: 5,
     },
     {
-      name: 'Priya N.',
+      name: 'Amir K.',
       place: 'Toowoomba, Australia',
-      text: 'I started from zero with the free courses and a $250 deposit. The mobile app is genuinely easy on the eyes at 1am, and the learning library got me reading charts within a few weeks.',
+      text: 'Started with the free courses and a $250 deposit. The charts are genuinely readable and the support team answers like humans, even at 2am.',
       stars: 4,
     },
     {
-      name: 'Jack W.',
+      name: 'Grace W.',
       place: 'Launceston, Australia',
-      text: 'I messaged support at 2am with a funding question and a real person replied in minutes. That is when I decided to stay. The platform is smooth, but the human support is the reason I recommend it.',
+      text: 'I asked a funding question at midnight and a real analyst replied in minutes. That is when I stopped shopping around. The platform is calm and the people are real.',
       stars: 5,
     },
     {
-      name: 'Olivia F.',
+      name: 'Peter M.',
       place: 'Ballarat, Australia',
-      text: 'The accuracy claims sounded too good, so I started small. My results have tracked the projections closely enough that I have since moved my main portfolio across. The calculator on the site is surprisingly honest.',
+      text: 'The 92% claim sounded like marketing, so I started small and watched. My results have tracked the projections closely enough that my main portfolio now lives here.',
       stars: 5,
     },
   ],
 }
 
 export const SECURITY = {
-  kicker: 'Security first',
-  title: 'Bank-Grade Protection, Round The Clock',
-  text: 'We built Dusk Fundgrove on one principle: your assets and your data deserve bank-grade protection at every hour, every day.',
+  kicker: 'Custody',
+  title: 'Your Assets Are Held The Old Fashioned Way. Safely.',
+  text: 'We built Dusk Fundgrove on one principle: your assets and your data deserve bank-grade protection, at every hour, every day.',
   bigStat: '98%',
   bigStatLabel: 'of assets held in offline cold wallets with no internet connection',
   items: [
     {
       icon: 'lock',
       title: '256-Bit SSL Encryption',
-      text: 'Every connection and transaction is protected with the same encryption standard used by global banks.',
+      text: 'The same standard global banks use on every connection.',
     },
     {
       icon: 'shield',
       title: 'Two-Factor Authentication',
-      text: 'An extra layer of protection on every login and every withdrawal request.',
+      text: 'An extra check on every login and every withdrawal.',
     },
     {
       icon: 'scale',
       title: 'KYC And AML Compliant',
-      text: 'We verify every account to keep the platform free of fraud and financial crime.',
+      text: 'Every account is verified to keep the desk clean.',
     },
     {
       icon: 'wallet',
       title: 'Segregated Accounts',
-      text: 'Client funds are held separately from company operating funds, always.',
-    },
-  ],
-}
-
-export const CAPABILITIES = {
-  kicker: 'Inside the toolkit',
-  title: 'Inside The Dusk Toolkit',
-  text: 'A full toolkit, engineered for the overnight session.',
-  items: [
-    {
-      icon: 'chart',
-      title: 'Advanced Charting',
-      text: 'Professional-grade charts with live data and 80+ indicators.',
-    },
-    {
-      icon: 'bolt',
-      title: 'Real-Time AI Signals',
-      text: 'Entry and exit signals delivered the moment opportunities appear.',
-    },
-    {
-      icon: 'copy',
-      title: 'One-Click Copy Trading',
-      text: 'Replicate top-performing strategies automatically.',
-    },
-    {
-      icon: 'device',
-      title: 'Multi-Device Sync',
-      text: 'Start on desktop, finish on mobile. Perfectly in sync.',
-    },
-    {
-      icon: 'pie',
-      title: 'Portfolio Analytics',
-      text: 'Track performance, risk and allocation in one dashboard.',
-    },
-    {
-      icon: 'globe',
-      title: '300+ Global Markets',
-      text: 'Crypto, equities, forex, commodities and more in one place.',
+      text: 'Client funds never mix with company operating funds.',
     },
   ],
 }
 
 export const FINAL_CTA = {
-  title: 'Start Your Journey With Dusk Fundgrove',
-  text: 'Create your free account today and see why investors across Australia trade the night session with Dusk Fundgrove.',
+  title: 'Put The Night Watch To Work',
+  text: 'Create your free account this evening and wake up to a portfolio that kept moving while you slept.',
   trust: '256-bit SSL encryption · Free registration · Withdraw anytime',
 }
 
 export const FAQS = [
   {
-    q: 'What Is Dusk Fundgrove?',
-    a: 'Dusk Fundgrove is an AI-powered trading platform where you can trade Bitcoin, Ethereum and 300+ other assets, including equities, forex, commodities and CFDs, from one secure account. It is built for beginners and experienced investors alike.',
+    q: 'What Exactly Is The Evening Desk?',
+    a: 'The evening desk is what we call the full Dusk Fundgrove setup: an AI-assisted engine, real analysts and a live ledger that keep working through the overnight session, so your portfolio is watched while you sleep.',
   },
   {
-    q: 'How Do I Get Started With Dusk Fundgrove?',
-    a: 'Create a free account with your name, email and phone number. Once your account is verified, fund it by credit card, bank transfer or PayPal and start trading right away.',
+    q: 'Who Runs The Trades While I Sleep?',
+    a: 'The AI engine scans markets around the clock and pushes signals to your phone. You decide which signals to follow. Nothing trades without your approval unless you switch on copy trading.',
   },
   {
-    q: 'Is Dusk Fundgrove Safe?',
-    a: 'Yes. Dusk Fundgrove protects your assets with 256-bit SSL encryption, two-factor authentication and cold storage. 98% of assets are held in offline wallets with no internet connection. We are also fully KYC/AML compliant.',
+    q: 'How Much Money Do I Need To Start?',
+    a: 'Nothing to open an account. Registration is free. When you are ready to trade, most investors start with a few hundred dollars and build from there.',
   },
   {
-    q: 'What Assets Can I Trade On Dusk Fundgrove?',
-    a: 'You can trade major cryptocurrencies like Bitcoin, Ethereum, Solana and Dogecoin, as well as equities, forex pairs, commodities, precious metals and CFDs. Over 300 instruments in total.',
+    q: 'Can I Try It Before Depositing?',
+    a: 'Yes. Every account includes the full platform: live charts, the evening reports, the learning library and your account manager. You only fund the account when you want to trade.',
   },
   {
-    q: 'Do I Need Trading Experience To Use Dusk Fundgrove?',
-    a: 'Not at all. The platform is built for beginners. AI signals, copy trading and the learning library do the heavy lifting while you learn at your own pace.',
+    q: 'What Protects My Money?',
+    a: '256-bit SSL encryption on every connection, two-factor authentication on withdrawals, segregated client accounts and 98% of assets held in offline cold storage. We are fully KYC and AML compliant.',
   },
   {
-    q: 'How Do I Withdraw My Funds?',
-    a: 'Request a withdrawal at any time from your account dashboard. Withdrawals are processed quickly and sent back to your registered payment method.',
-  },
-  {
-    q: 'What Does It Cost To Open An Account?',
-    a: 'Nothing. Registration is free and there are no hidden fees to open an account. Once verified, you fund your account at your own pace and trade whenever you are ready.',
+    q: 'How Quickly Can I Withdraw?',
+    a: 'Request a withdrawal any time from your dashboard. Most withdrawals are processed within two business days and sent to your registered payment method.',
   },
 ]
 
 export const FOOTER = {
   blurb:
-    'Dusk Fundgrove is an AI-powered multi-asset trading platform offering cryptocurrencies, equities, forex and more, with 256-bit encryption and 98% cold storage.',
+    'Dusk Fundgrove is an AI-assisted multi-asset trading platform offering cryptocurrencies, equities, forex and more, with 256-bit encryption and 98% cold storage.',
   navTitle: 'Company',
   legalTitle: 'Legal',
   contactTitle: 'Contact',
   contact: [
     { icon: 'mail', text: SUPPORT_EMAIL },
-    { icon: 'clock', text: 'Support available 24/7' },
-    { icon: 'globe', text: 'Now available in Australia' },
+    { icon: 'clock', text: 'Desk open 24/7' },
+    { icon: 'globe', text: 'Now serving Australia' },
   ],
   risk: [
     'Risk Disclosure: Trading cryptocurrencies, forex, CFDs and other leveraged instruments involves substantial risk of loss and is not suitable for every investor. The value of digital assets can be highly volatile, and you may lose more than your initial investment. Past performance and AI projections are not indicative of future results. You should carefully consider your objectives, level of experience and risk appetite before trading, and never trade with funds you cannot afford to lose. Dusk Fundgrove does not provide investment advice. Nothing on this website constitutes a solicitation, recommendation or offer to buy or sell any financial instrument. Consult an independent financial advisor if you have any doubts. Accuracy figures, earnings projections and testimonials are illustrative marketing material, not guarantees.',

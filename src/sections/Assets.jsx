@@ -1,3 +1,4 @@
+import Icon from '../components/Icon'
 import { ASSETS } from '../data/content'
 
 export default function Assets() {
@@ -12,19 +13,24 @@ export default function Assets() {
           <p data-reveal>{ASSETS.text}</p>
         </div>
 
-        <div className="assets-grid">
+        <div className="assets-rows">
           {ASSETS.list.map((asset, i) => (
-            <div className="asset-card" key={asset.name} data-reveal style={{ transitionDelay: `${i * 50}ms` }}>
+            <div className="asset-row" key={asset.name} data-reveal style={{ transitionDelay: `${i * 50}ms` }}>
               <img
-                className="asset-card__coin"
+                className="asset-row__coin"
                 src={asset.icon}
                 alt={`${asset.name} logo`}
                 loading="lazy"
               />
               <div>
-                <div className="asset-card__name">{asset.name}</div>
-                <div className="asset-card__tag">{asset.tag}</div>
+                <div className="asset-row__name">{asset.name}</div>
+                <div className="asset-row__tag">{asset.tag}</div>
               </div>
+              <span className="asset-row__leader" aria-hidden="true" />
+              <span className="asset-row__trade">
+                Trade
+                <Icon name="arrow-right" size={13} />
+              </span>
             </div>
           ))}
         </div>

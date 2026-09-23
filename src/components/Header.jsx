@@ -26,7 +26,7 @@ export default function Header() {
         </nav>
 
         <div className="site-header__actions">
-          <Link className="btn btn--green" to="/sign-up" onClick={() => setOpen(false)}>
+          <Link className="btn btn--ink" to="/sign-up" onClick={() => setOpen(false)}>
             Sign Up
           </Link>
           <button
@@ -48,7 +48,7 @@ export default function Header() {
           </Link>
         ))}
         <div className="mobile-menu__actions">
-          <Link className="btn btn--green btn--block" to="/sign-up" onClick={() => setOpen(false)}>
+          <Link className="btn btn--ink btn--block" to="/sign-up" onClick={() => setOpen(false)}>
             Sign Up
           </Link>
         </div>

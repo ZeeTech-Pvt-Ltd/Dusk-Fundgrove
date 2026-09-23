@@ -23,7 +23,7 @@ export default function ThankYou() {
           Dusk Fundgrove account and guide you through your first trade.
         </p>
         <div data-reveal style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link className="btn btn--green" to="/">
+          <Link className="btn btn--ink" to="/">
             Back to home
           </Link>
           <Link className="btn btn--ghost" to="/faq">

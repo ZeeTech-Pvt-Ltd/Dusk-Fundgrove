@@ -1,15 +1,14 @@
 import Icon from '../components/Icon'
-import Calculator from '../components/Calculator'
 import RegistrationForm from '../components/RegistrationForm'
 import { JOIN, HERO } from '../data/content'
 
 export default function JoinCta() {
   return (
-    <section className="section" id="register">
+    <section className="section section--dark" id="register">
       <div className="container">
         <div className="join-grid">
           <div className="join__copy">
-            <span className="kicker kicker--chip" data-reveal>
+            <span className="kicker" data-reveal>
               {JOIN.kicker}
             </span>
             <h2 data-reveal>{JOIN.title}</h2>
@@ -24,7 +23,6 @@ export default function JoinCta() {
                 </li>
               ))}
             </ul>
-            <Calculator />
           </div>
 
           <RegistrationForm idPrefix="join" title={HERO.formTitle} subtitle={HERO.formSubtitle} />

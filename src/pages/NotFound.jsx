@@ -23,10 +23,10 @@ export default function NotFound() {
             back to safety.
           </p>
           <div className="final-cta__actions" data-reveal>
-            <Link className="btn btn--green btn--lg" to="/">
+            <Link className="btn btn--ink btn--lg" to="/">
               Back to home
             </Link>
-            <Link className="btn btn--ghost-light btn--lg" to="/sign-up">
+            <Link className="btn btn--ghost-ink btn--lg" to="/sign-up">
               Create an account
             </Link>
           </div>

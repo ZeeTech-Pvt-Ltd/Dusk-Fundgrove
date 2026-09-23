@@ -1,195 +1,164 @@
-// Inline SVG artworks drawn for the Night Desk theme (no stock photos).
-// Kept as components so the homepage stays self-contained and fast.
+// Inline SVG artworks drawn for the Evening Ledger theme (no stock
+// photos). Kept as components so the homepage stays self-contained.
 
 /**
- * Night-desk trading dashboard: framed terminal window with a candlestick
- * chart, KPI tiles and mono numerals. Used in the About section and the
- * About Us page.
+ * The evening ledger: a printed report card with ruled rows, serif
+ * labels, a dusk-gradient chart and a wax seal. Used in the About
+ * section and the About Us page.
  */
 export function DashboardArt({ className }) {
   return (
-    <svg className={className} viewBox="0 0 560 420" role="img" aria-label="Line-art illustration of the Dusk Fundgrove trading dashboard">
+    <svg className={className} viewBox="0 0 560 420" role="img" aria-label="Illustration of the Dusk Fundgrove evening ledger">
       <defs>
-        <linearGradient id="night-dash-glow" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#00e58f" stopOpacity="0.22" />
-          <stop offset="1" stopColor="#00e58f" stopOpacity="0" />
+        <linearGradient id="ledger-dusk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#d2556e" stopOpacity="0.35" />
+          <stop offset="1" stopColor="#7a5fd0" stopOpacity="0" />
         </linearGradient>
-        <linearGradient id="night-dusk" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#ffb35c" />
-          <stop offset="0.5" stopColor="#ff6b8a" />
-          <stop offset="1" stopColor="#9a6bff" />
+        <linearGradient id="ledger-line" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#e08a3c" />
+          <stop offset="0.5" stopColor="#d2556e" />
+          <stop offset="1" stopColor="#7a5fd0" />
         </linearGradient>
       </defs>
 
-      {/* window frame */}
-      <rect x="1" y="1" width="558" height="418" rx="12" fill="#0e1420" stroke="rgba(148,163,190,0.25)" />
-      <rect x="14" y="14" width="532" height="392" rx="7" fill="none" stroke="rgba(0,229,143,0.22)" />
+      {/* paper card */}
+      <rect x="1" y="1" width="558" height="418" rx="12" fill="#fffdf6" stroke="#cdc2a8" />
+      <rect x="14" y="14" width="532" height="392" rx="7" fill="none" stroke="#e4dcc9" />
 
-      {/* title bar */}
-      <line x1="24" y1="46" x2="536" y2="46" stroke="rgba(148,163,190,0.18)" />
-      <circle cx="42" cy="32" r="4.5" fill="#00e58f" />
-      <circle cx="60" cy="32" r="4.5" fill="none" stroke="#00a868" />
-      <circle cx="78" cy="32" r="4.5" fill="#9a6bff" />
-      <text x="98" y="38" fontFamily="'Chivo Mono', Consolas, monospace" fontSize="13" fontWeight="600" fill="#8a94a8">NIGHT DESK · ALL ASSETS</text>
+      {/* header */}
+      <text x="36" y="52" fontFamily="'Newsreader', Georgia, serif" fontSize="24" fontWeight="700" fill="#201c2b">The Evening Ledger</text>
+      <text x="36" y="74" fontFamily="'Roboto Mono', Consolas, monospace" fontSize="11" letterSpacing="1" fill="#6d6679">NIGHT SESSION REPORT · 03:42 AEST</text>
+      <line x1="36" y1="88" x2="524" y2="88" stroke="#e4dcc9" />
 
-      {/* KPI tiles */}
-      <g>
-        <rect x="36" y="70" width="150" height="74" rx="8" fill="#111a29" stroke="rgba(148,163,190,0.18)" />
-        <text x="52" y="96" fontSize="11" fontWeight="600" fill="#8a94a8" fontFamily="'Chivo Mono', Consolas, monospace">PORTFOLIO VALUE</text>
-        <text x="52" y="128" fontSize="25" fontWeight="700" fill="#e8eef7" fontFamily="'Chivo Mono', Consolas, monospace">$124,560</text>
-        <rect x="204" y="70" width="150" height="74" rx="8" fill="rgba(0,229,143,0.1)" stroke="rgba(0,229,143,0.3)" />
-        <text x="220" y="96" fontSize="11" fontWeight="600" fill="#00e58f" fontFamily="'Chivo Mono', Consolas, monospace">RETURN · 12 MO</text>
-        <text x="220" y="128" fontSize="25" fontWeight="700" fill="#00e58f" fontFamily="'Chivo Mono', Consolas, monospace">+8.2%</text>
-        <rect x="372" y="70" width="150" height="74" rx="8" fill="#111a29" stroke="rgba(148,163,190,0.18)" />
-        <text x="388" y="96" fontSize="11" fontWeight="600" fill="#8a94a8" fontFamily="'Chivo Mono', Consolas, monospace">AI SIGNALS</text>
-        <text x="388" y="128" fontSize="25" fontWeight="700" fill="#9a6bff" fontFamily="'Chivo Mono', Consolas, monospace">92%</text>
-      </g>
+      {/* wax seal */}
+      <circle cx="502" cy="48" r="20" fill="#b93a2d" />
+      <circle cx="502" cy="48" r="15" fill="none" stroke="#f7f2e6" strokeWidth="1" opacity="0.6" />
+      <text x="502" y="54" textAnchor="middle" fontFamily="'Roboto Mono', Consolas, monospace" fontSize="12" fontWeight="700" fill="#f7f2e6">DF</text>
 
-      {/* chart grid */}
-      <g stroke="rgba(148,163,190,0.1)">
-        <line x1="36" y1="180" x2="524" y2="180" />
-        <line x1="36" y1="232" x2="524" y2="232" />
-        <line x1="36" y1="284" x2="524" y2="284" />
-        <line x1="36" y1="336" x2="524" y2="336" />
+      {/* KPI row */}
+      <g fontFamily="'Roboto Mono', Consolas, monospace">
+        <rect x="36" y="106" width="150" height="72" rx="8" fill="#faf6ec" stroke="#e4dcc9" />
+        <text x="52" y="130" fontSize="10" letterSpacing="1" fill="#6d6679">PORTFOLIO</text>
+        <text x="52" y="160" fontSize="24" fontWeight="700" fill="#201c2b">$124,560</text>
+        <rect x="204" y="106" width="150" height="72" rx="8" fill="rgba(185,58,45,0.07)" stroke="rgba(185,58,45,0.3)" />
+        <text x="220" y="130" fontSize="10" letterSpacing="1" fill="#b93a2d">RETURN · 12 MO</text>
+        <text x="220" y="160" fontSize="24" fontWeight="700" fill="#b93a2d">+7.6%</text>
+        <rect x="372" y="106" width="150" height="72" rx="8" fill="#faf6ec" stroke="#e4dcc9" />
+        <text x="388" y="130" fontSize="10" letterSpacing="1" fill="#6d6679">AI SIGNALS</text>
+        <text x="388" y="160" fontSize="24" fontWeight="700" fill="#7a5fd0">92%</text>
       </g>
 
-      {/* candlestick series */}
-      <g stroke="#00e58f" strokeWidth="2">
-        <line x1="70" y1="330" x2="70" y2="300" /><line x1="78" y1="320" x2="78" y2="304" stroke="#9a6bff" />
-        <line x1="110" y1="336" x2="110" y2="284" /><line x1="118" y1="322" x2="118" y2="290" stroke="#9a6bff" />
-        <line x1="150" y1="318" x2="150" y2="262" /><line x1="158" y1="306" x2="158" y2="268" stroke="#9a6bff" />
-        <line x1="190" y1="330" x2="190" y2="246" /><line x1="198" y1="314" x2="198" y2="252" stroke="#9a6bff" />
-      </g>
-      <g fill="#00e58f">
-        <rect x="70" y="302" width="8" height="26" rx="2" />
-        <rect x="110" y="286" width="8" height="48" rx="2" />
-        <rect x="150" y="264" width="8" height="52" rx="2" />
-        <rect x="190" y="248" width="8" height="80" rx="2" />
-      </g>
-      <g stroke="#ff6b8a" strokeWidth="2">
-        <line x1="230" y1="300" x2="230" y2="256" /><line x1="238" y1="288" x2="238" y2="262" stroke="#9a6bff" />
-        <line x1="270" y1="290" x2="270" y2="240" /><line x1="278" y1="278" x2="278" y2="246" stroke="#9a6bff" />
-      </g>
-      <g fill="#ff6b8a">
-        <rect x="230" y="258" width="8" height="40" rx="2" />
-        <rect x="270" y="242" width="8" height="46" rx="2" />
-      </g>
-      <g stroke="#00e58f" strokeWidth="2">
-        <line x1="310" y1="270" x2="310" y2="214" /><line x1="318" y1="256" x2="318" y2="220" stroke="#9a6bff" />
-        <line x1="350" y1="258" x2="350" y2="188" /><line x1="358" y1="242" x2="358" y2="194" stroke="#9a6bff" />
-        <line x1="390" y1="240" x2="390" y2="164" /><line x1="398" y1="224" x2="398" y2="170" stroke="#9a6bff" />
-        <line x1="430" y1="226" x2="430" y2="138" /><line x1="438" y1="208" x2="438" y2="144" stroke="#9a6bff" />
-      </g>
-      <g fill="#00e58f">
-        <rect x="310" y="216" width="8" height="52" rx="2" />
-        <rect x="350" y="190" width="8" height="66" rx="2" />
-        <rect x="390" y="166" width="8" height="72" rx="2" />
-        <rect x="430" y="140" width="8" height="84" rx="2" />
-      </g>
-      <g stroke="#4dffb8" strokeWidth="2">
-        <line x1="470" y1="206" x2="470" y2="112" /><line x1="478" y1="188" x2="478" y2="118" stroke="#9a6bff" />
-        <line x1="510" y1="190" x2="510" y2="92" /><line x1="518" y1="172" x2="518" y2="98" stroke="#9a6bff" />
-      </g>
-      <g fill="#4dffb8">
-        <rect x="470" y="114" width="8" height="90" rx="2" />
-        <rect x="510" y="94" width="8" height="94" rx="2" />
+      {/* ruled chart area */}
+      <g stroke="#e4dcc9">
+        <line x1="36" y1="210" x2="524" y2="210" />
+        <line x1="36" y1="258" x2="524" y2="258" />
+        <line x1="36" y1="306" x2="524" y2="306" />
+        <line x1="36" y1="354" x2="524" y2="354" />
       </g>
 
-      {/* dusk glow under the series */}
-      <rect x="36" y="200" width="488" height="136" fill="url(#night-dash-glow)" opacity="0.35" />
+      {/* dusk area chart */}
+      <path
+        d="M36 330 C 90 322, 130 300, 180 306 S 260 254, 300 260 S 380 200, 420 210 S 490 148, 524 154 L 524 354 L 36 354 Z"
+        fill="url(#ledger-dusk)"
+      />
+      <path
+        d="M36 330 C 90 322, 130 300, 180 306 S 260 254, 300 260 S 380 200, 420 210 S 490 148, 524 154"
+        fill="none"
+        stroke="#b93a2d"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
 
-      {/* caption */}
-      <text x="36" y="398" fontFamily="Inter, Arial, sans-serif" fontSize="12" fill="#8a94a8">Live portfolio tracking · desktop, tablet and mobile</text>
-      <rect x="470" y="386" width="90" height="3" fill="url(#night-dusk)" opacity="0.8" />
+      {/* seal diamond markers on the line */}
+      <g fill="#b93a2d" stroke="#fffdf6" strokeWidth="2.5">
+        <rect x="292" y="252" width="14" height="14" transform="rotate(45 299 259)" />
+        <rect x="412" y="202" width="14" height="14" transform="rotate(45 419 209)" />
+        <rect x="516" y="146" width="14" height="14" transform="rotate(45 523 153)" />
+      </g>
+
+      {/* footer note */}
+      <line x1="36" y1="372" x2="524" y2="372" stroke="#e4dcc9" />
+      <text x="36" y="398" fontFamily="'Public Sans', Arial, sans-serif" fontSize="12" fill="#6d6679">Printed by the night watch. Trading involves significant risk.</text>
+      <rect x="36" y="404" width="90" height="3" fill="url(#ledger-line)" opacity="0.9" />
     </svg>
   )
 }
 
 /**
- * Night-session motif: rising candlesticks under a starfield with a
- * horizon gradient. Used on the Product page's trading-experience block.
+ * Sunset over the market: the dusk disc setting behind a row of
+ * candlesticks. Used on the Product page's trading-experience block.
  */
 export function GrowthArt({ className }) {
   return (
-    <svg className={className} viewBox="0 0 560 420" role="img" aria-label="Line-art illustration of trading through the night with Dusk Fundgrove">
+    <svg className={className} viewBox="0 0 560 420" role="img" aria-label="Illustration of the market at dusk on Dusk Fundgrove">
       <defs>
-        <linearGradient id="night-growth-glow" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#00e58f" stopOpacity="0.35" />
-          <stop offset="1" stopColor="#00e58f" stopOpacity="0" />
-        </linearGradient>
-        <linearGradient id="night-dusk2" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#ffb35c" />
-          <stop offset="0.5" stopColor="#ff6b8a" />
-          <stop offset="1" stopColor="#9a6bff" />
+        <linearGradient id="sunset-disc" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#e08a3c" />
+          <stop offset="0.55" stopColor="#d2556e" />
+          <stop offset="1" stopColor="#7a5fd0" />
         </linearGradient>
       </defs>
 
-      {/* frame */}
-      <rect x="1" y="1" width="558" height="418" rx="12" fill="#0e1420" stroke="rgba(148,163,190,0.25)" />
-      <rect x="14" y="14" width="532" height="392" rx="7" fill="none" stroke="rgba(0,229,143,0.2)" />
+      {/* paper frame */}
+      <rect x="1" y="1" width="558" height="418" rx="12" fill="#fffdf6" stroke="#cdc2a8" />
+      <rect x="14" y="14" width="532" height="392" rx="7" fill="none" stroke="#e4dcc9" />
 
-      {/* starfield */}
-      <g fill="#e8eef7">
-        <circle cx="60" cy="60" r="1.4" opacity="0.7" />
-        <circle cx="140" cy="40" r="1" opacity="0.5" />
-        <circle cx="230" cy="70" r="1.3" opacity="0.65" />
-        <circle cx="330" cy="46" r="1" opacity="0.45" />
-        <circle cx="420" cy="66" r="1.4" opacity="0.7" />
-        <circle cx="510" cy="42" r="1" opacity="0.5" />
-        <circle cx="90" cy="96" r="1" opacity="0.4" />
-        <circle cx="480" cy="100" r="1.1" opacity="0.55" />
-        <circle cx="370" cy="110" r="1" opacity="0.4" />
+      {/* sky bands */}
+      <rect x="15" y="15" width="530" height="120" rx="6" fill="#faf6ec" />
+      <line x1="15" y1="135" x2="545" y2="135" stroke="#cdc2a8" />
+
+      {/* setting sun */}
+      <path d="M200 135 A 62 62 0 0 1 324 135 Z" fill="url(#sunset-disc)" opacity="0.9" />
+      <g stroke="#e08a3c" strokeWidth="2" strokeLinecap="round" opacity="0.55">
+        <line x1="262" y1="148" x2="262" y2="162" />
+        <line x1="292" y1="152" x2="292" y2="170" />
+        <line x1="232" y1="152" x2="232" y2="170" />
       </g>
 
-      {/* chart grid */}
-      <g stroke="rgba(148,163,190,0.08)">
-        <path d="M0 140 H560 M0 190 H560 M0 240 H560 M0 290 H560 M0 340 H560" />
+      {/* candlestick skyline (ink silhouettes) */}
+      <g stroke="#201c2b" strokeWidth="2">
+        <line x1="60" y1="300" x2="60" y2="240" /><line x1="68" y1="288" x2="68" y2="248" stroke="#453e55" />
+        <line x1="100" y1="310" x2="100" y2="216" /><line x1="108" y1="296" x2="108" y2="224" stroke="#453e55" />
+        <line x1="140" y1="292" x2="140" y2="196" /><line x1="148" y1="278" x2="148" y2="204" stroke="#453e55" />
+      </g>
+      <g fill="#201c2b">
+        <rect x="60" y="242" width="8" height="56" rx="2" />
+        <rect x="100" y="218" width="8" height="90" rx="2" />
+        <rect x="140" y="198" width="8" height="92" rx="2" />
+      </g>
+      <g stroke="#b93a2d" strokeWidth="2">
+        <line x1="180" y1="286" x2="180" y2="176" /><line x1="188" y1="272" x2="188" y2="184" stroke="#453e55" />
+        <line x1="220" y1="272" x2="220" y2="150" /><line x1="228" y1="258" x2="228" y2="158" stroke="#453e55" />
+      </g>
+      <g fill="#b93a2d">
+        <rect x="180" y="178" width="8" height="106" rx="2" />
+        <rect x="220" y="152" width="8" height="118" rx="2" />
       </g>
 
-      {/* candlesticks */}
-      <g stroke="#00e58f" strokeWidth="2">
-        <line x1="70" y1="340" x2="70" y2="300" /><line x1="78" y1="330" x2="78" y2="306" stroke="#9a6bff" />
-        <line x1="110" y1="350" x2="110" y2="280" /><line x1="118" y1="334" x2="118" y2="288" stroke="#9a6bff" />
-        <line x1="150" y1="330" x2="150" y2="252" /><line x1="158" y1="316" x2="158" y2="260" stroke="#9a6bff" />
-        <line x1="190" y1="344" x2="190" y2="232" /><line x1="198" y1="326" x2="198" y2="240" stroke="#9a6bff" />
-      </g>
-      <g fill="#00e58f">
-        <rect x="70" y="302" width="8" height="36" rx="2" />
-        <rect x="110" y="282" width="8" height="66" rx="2" />
-        <rect x="150" y="254" width="8" height="74" rx="2" />
-        <rect x="190" y="234" width="8" height="108" rx="2" />
-      </g>
-
-      {/* growth path */}
+      {/* rising line over the candles */}
       <path
-        d="M40 330 C 110 318, 160 268, 220 258 S 320 190, 370 172 S 470 96, 530 78 L 530 360 L 40 360 Z"
-        fill="url(#night-growth-glow)"
-      />
-      <path
-        d="M40 330 C 110 318, 160 268, 220 258 S 320 190, 370 172 S 470 96, 530 78"
+        d="M40 330 C 120 310, 180 240, 250 222 S 360 150, 420 128 S 500 84, 530 70"
         fill="none"
-        stroke="#00e58f"
+        stroke="#7a5fd0"
         strokeWidth="3.5"
         strokeLinecap="round"
       />
-
-      {/* signal nodes */}
-      <g fill="#4dffb8" stroke="#070b12" strokeWidth="2.5">
-        <rect x="212" y="250" width="15" height="15" rx="3" />
-        <rect x="362" y="164" width="15" height="15" rx="3" />
-        <rect x="518" y="68" width="17" height="17" rx="3" />
+      <g fill="#7a5fd0" stroke="#fffdf6" strokeWidth="2.5">
+        <rect x="243" y="214" width="15" height="15" rx="3" />
+        <rect x="413" y="120" width="15" height="15" rx="3" />
+        <rect x="523" y="62" width="17" height="17" rx="3" />
       </g>
 
       {/* labels */}
       <g>
-        <text x="40" y="96" fontFamily="'Bricolage Grotesque', Arial, sans-serif" fontWeight="800" fontSize="24" fill="#e8eef7">Trade The Night Session</text>
-        <text x="40" y="122" fontSize="14" fill="#8a94a8" fontFamily="Inter, Arial, sans-serif">AI signals · copy trading · 300+ markets</text>
-        <rect x="40" y="142" width="140" height="44" rx="22" fill="#00e58f" />
-        <text x="110" y="170" textAnchor="middle" fontSize="15" fontWeight="700" fill="#04281a" fontFamily="Inter, Arial, sans-serif">Get started</text>
+        <text x="36" y="60" fontFamily="'Newsreader', Georgia, serif" fontWeight="700" fontSize="26" fill="#201c2b">One Desk, Every Market</text>
+        <text x="36" y="86" fontSize="14" fill="#6d6679" fontFamily="'Public Sans', Arial, sans-serif">AI signals · copy trading · 300+ markets</text>
+        <rect x="36" y="106" width="140" height="40" rx="20" fill="#201c2b" />
+        <text x="106" y="132" textAnchor="middle" fontSize="15" fontWeight="700" fill="#f7f2e6" fontFamily="'Public Sans', Arial, sans-serif">Get started</text>
       </g>
 
-      <text x="40" y="398" fontFamily="Inter, Arial, sans-serif" fontSize="12" fill="#8a94a8">Illustrative artwork. Trading involves significant risk</text>
-      <rect x="470" y="386" width="90" height="3" fill="url(#night-dusk2)" opacity="0.8" />
+      <text x="36" y="398" fontFamily="'Public Sans', Arial, sans-serif" fontSize="12" fill="#6d6679">Illustrative artwork. Trading involves significant risk</text>
+      <rect x="36" y="404" width="90" height="3" fill="url(#sunset-disc)" opacity="0.9" />
     </svg>
   )
 }

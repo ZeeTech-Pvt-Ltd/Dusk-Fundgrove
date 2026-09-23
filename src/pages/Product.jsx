@@ -76,7 +76,7 @@ export default function Product() {
                 ))}
               </ul>
               <div data-reveal>
-                <Link className="btn btn--green" to="/sign-up">
+                <Link className="btn btn--ink" to="/sign-up">
                   Open your free account
                   <Icon name="arrow-right" size={18} />
                 </Link>

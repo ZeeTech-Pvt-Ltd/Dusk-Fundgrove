@@ -29,12 +29,12 @@ export default function About() {
             </ul>
             <div data-reveal>
               {ctaLink.to ? (
-                <Link className="btn btn--dark" to={ctaLink.to}>
+                <Link className="btn btn--outline" to={ctaLink.to}>
                   Get started
                   <Icon name="arrow-right" size={18} />
                 </Link>
               ) : (
-                <a className="btn btn--dark" href={ctaLink.href}>
+                <a className="btn btn--outline" href={ctaLink.href}>
                   Get started
                   <Icon name="arrow-right" size={18} />
                 </a>

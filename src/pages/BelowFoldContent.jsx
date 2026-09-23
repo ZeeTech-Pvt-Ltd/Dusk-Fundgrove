@@ -7,12 +7,11 @@ import About from '../sections/About'
 import Assets from '../sections/Assets'
 import HowItWorks from '../sections/HowItWorks'
 import JoinCta from '../sections/JoinCta'
-import MarketTicker from '../components/MarketTicker'
+import GrowthBand from '../sections/GrowthBand'
 import Benefits from '../sections/Benefits'
 import Overview from '../sections/Overview'
 import Testimonials from '../sections/Testimonials'
 import Security from '../sections/Security'
-import Capabilities from '../sections/Capabilities'
 import FinalCta from '../sections/FinalCta'
 import FaqSection from '../sections/FaqSection'
 
@@ -41,12 +40,11 @@ export default function BelowFoldContent() {
       <Assets />
       <HowItWorks />
       <JoinCta />
-      <MarketTicker />
+      <GrowthBand />
       <Benefits />
       <Overview />
       <Testimonials />
       <Security />
-      <Capabilities />
       <FinalCta />
       <FaqSection />
     </>

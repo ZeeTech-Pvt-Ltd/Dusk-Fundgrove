@@ -5,7 +5,7 @@ import { CALCULATOR } from '../data/content'
 const MIN = 250
 const MAX = 50000
 const STEP = 250
-const MONTHLY_RATE = 0.082 // illustrative - matches the "8.2%" projection claim
+const MONTHLY_RATE = 0.076 // illustrative - matches the "7.6%" projection claim
 const MONTHS = 12
 
 const money = new Intl.NumberFormat('en-AU', {
@@ -27,8 +27,8 @@ export default function Calculator() {
           <Icon name="sparkle" size={20} />
         </span>
         <div>
-          <h3>{CALCULATOR.title}</h3>
-          <p>{CALCULATOR.subtitle}</p>
+          <h3>{CALCULATOR.cardTitle}</h3>
+          <p>{CALCULATOR.cardSubtitle}</p>
         </div>
       </div>
 

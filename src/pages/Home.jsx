@@ -5,6 +5,7 @@ import { SITE_URL } from '../data/content'
 
 import Hero from '../sections/Hero'
 import StatsBand from '../sections/StatsBand'
+import MarketTicker from '../components/MarketTicker'
 
 // Below-the-fold sections live in their own chunk, fetched only after
 // the browser is idle - keeps the entry bundle small for first paint.
@@ -31,11 +32,11 @@ function BelowTheFold() {
 
 export default function Home() {
   useMeta({
-    title: 'Dusk Fundgrove - AI-Powered Trading Platform | Australia',
+    title: 'Dusk Fundgrove - AI-Assisted Trading Platform | Australia',
     description:
-      'Dusk Fundgrove is an AI-powered trading platform for Bitcoin, Ethereum and 300+ assets. Create your free account today and trade around the clock.',
+      'Dusk Fundgrove runs your trading desk through the night with AI signals, bank-grade custody and 24/7 human support. Create your free account today.',
     keywords:
-      'Dusk Fundgrove, AI trading platform, crypto trading Australia, buy Bitcoin Australia, Ethereum trading, cryptocurrency exchange Australia, night trading',
+      'Dusk Fundgrove, AI trading platform, crypto trading Australia, buy Bitcoin Australia, Ethereum trading, overnight trading, evening trading desk',
     canonical: SITE_URL,
   })
 
@@ -44,6 +45,7 @@ export default function Home() {
       <ServiceJsonLd />
       <Hero />
       <StatsBand />
+      <MarketTicker />
       <BelowTheFold />
     </>
   )

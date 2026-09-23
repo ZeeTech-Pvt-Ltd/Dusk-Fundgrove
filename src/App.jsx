@@ -40,7 +40,7 @@ class ChunkErrorBoundary extends Component {
         <p style={{ color: 'var(--muted)', marginBottom: 18 }}>
           Something went wrong loading this page.
         </p>
-        <button className="btn btn--green" type="button" onClick={() => window.location.reload()}>
+        <button className="btn btn--ink" type="button" onClick={() => window.location.reload()}>
           Reload page
         </button>
       </div>

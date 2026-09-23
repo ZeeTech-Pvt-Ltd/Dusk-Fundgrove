@@ -10,26 +10,28 @@ export default function FinalCta() {
   return (
     <section className="final-cta">
       <div className="container">
-        <h2 data-reveal>{FINAL_CTA.title}</h2>
-        <p data-reveal>{FINAL_CTA.text}</p>
-        <div className="final-cta__actions" data-reveal>
-          <Link className="btn btn--green btn--lg" to="/sign-up">
-            Open your free account
-            <Icon name="arrow-right" size={19} />
-          </Link>
-          {faqLink.to ? (
-            <Link className="btn btn--ghost-light btn--lg" to={faqLink.to}>
-              Read the FAQ
+        <div className="final-cta__card">
+          <h2 data-reveal>{FINAL_CTA.title}</h2>
+          <p data-reveal>{FINAL_CTA.text}</p>
+          <div className="final-cta__actions" data-reveal>
+            <Link className="btn btn--ink btn--lg" to="/sign-up">
+              Open your free account
+              <Icon name="arrow-right" size={19} />
             </Link>
-          ) : (
-            <a className="btn btn--ghost-light btn--lg" href={faqLink.href}>
-              Read the FAQ
-            </a>
-          )}
-        </div>
-        <div className="final-cta__trust" data-reveal>
-          <Icon name="lock" size={14} />
-          {FINAL_CTA.trust}
+            {faqLink.to ? (
+              <Link className="btn btn--ghost-ink btn--lg" to={faqLink.to}>
+                Read the FAQ
+              </Link>
+            ) : (
+              <a className="btn btn--ghost-ink btn--lg" href={faqLink.href}>
+                Read the FAQ
+              </a>
+            )}
+          </div>
+          <div className="final-cta__trust" data-reveal>
+            <Icon name="lock" size={14} />
+            {FINAL_CTA.trust}
+          </div>
         </div>
       </div>
     </section>
