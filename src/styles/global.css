@@ -460,6 +460,19 @@ button {
   padding-top: 18px;
 }
 
+/* restore button styling - the .mobile-menu a rule above (higher
+   specificity) would otherwise make the Sign Up text dark-on-dark
+   and drop the button to a block layout */
+.mobile-menu__actions .btn {
+  display: inline-flex;
+  border-bottom: none;
+  font-size: 15px;
+}
+
+.mobile-menu__actions .btn--ink {
+  color: var(--cream);
+}
+
 /* ---------- hero ---------- */
 
 .hero {
