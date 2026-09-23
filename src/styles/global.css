@@ -506,35 +506,6 @@ button {
   align-items: center;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px 18px 8px 10px;
-  margin-bottom: 26px;
-  border: 1px solid var(--seal-line);
-  border-radius: 999px;
-  background: var(--seal-soft);
-  font-size: 13.5px;
-  font-weight: 500;
-  color: var(--ink-soft);
-}
-
-.hero-badge__dot {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 11px;
-  border-radius: 999px;
-  background: var(--seal);
-  color: var(--cream);
-  font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
 .hero h1 {
   color: var(--ink);
   font-size: clamp(38px, 5vw, 60px);

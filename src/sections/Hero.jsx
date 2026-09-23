@@ -46,14 +46,6 @@ export default function Hero() {
           <div>
             {/* Above-the-fold elements render instantly (no reveal fade):
                 the animation would delay FCP/LCP on mobile. */}
-            <div className="hero-badge">
-              <span className="hero-badge__dot">
-                <Icon name="clock" size={13} />
-                Open now
-              </span>
-              {HERO.badge}
-            </div>
-
             <h1>
               {HERO.title[0]} <span className="hl">{HERO.title[1]}</span> {HERO.title[2]}
             </h1>

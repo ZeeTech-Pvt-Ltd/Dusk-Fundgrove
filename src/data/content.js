@@ -23,7 +23,6 @@ export const NAV_LINKS = [
 ]
 
 export const HERO = {
-  badge: 'Evening desk now open for Australian investors',
   title: ['When The Markets Quiet Down,', 'Dusk Fundgrove', 'Keeps On Trading'],
   // `title` is [before, highlighted, after] - the highlighted word gets
   // the dusk gradient.
