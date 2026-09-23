@@ -19,8 +19,10 @@ export default function HowItWorks() {
                 <Icon name={step.icon} size={26} strokeWidth={1.7} />
                 <span className="step-card__num">0{i + 1}</span>
               </span>
-              <h3>{step.title}</h3>
-              <p>{step.text}</p>
+              <div className="step-card__body">
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </div>
             </div>
           ))}
         </div>

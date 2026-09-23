@@ -97,8 +97,10 @@ export default function AboutUs() {
                 <span className="step-card__icon">
                   <span className="step-card__num step-card__num--center">0{i + 1}</span>
                 </span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+                <div className="step-card__body">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
               </div>
             ))}
           </div>
