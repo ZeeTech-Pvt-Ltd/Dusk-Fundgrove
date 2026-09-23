@@ -7,13 +7,17 @@ const TRUST_ICONS = { 0: 'lock', 1: 'shield', 2: 'headset' }
 export default function Hero() {
   return (
     <section className="hero">
+      {/* faint serif monogram watermark - fills the open paper space */}
+      <span className="hero__monogram" aria-hidden="true">
+        DF
+      </span>
       <div className="container">
         <div className="hero-grid">
           <div>
             {/* Above-the-fold elements render instantly (no reveal fade):
                 the animation would delay FCP/LCP on mobile. */}
             <h1>
-              {HERO.title.join(' ')}
+              <em>{HERO.title[0]}</em> {HERO.title.slice(1).join(' ')}
             </h1>
 
             <p className="hero__lead">

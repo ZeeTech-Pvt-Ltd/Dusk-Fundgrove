@@ -493,6 +493,57 @@ button {
   margin-bottom: 22px;
 }
 
+/* italic serif opening line - editorial contrast in a single colour */
+.hero h1 em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* double rule under the headline, like the inner page titles */
+.hero h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 18px;
+  background:
+    linear-gradient(var(--seal), var(--seal)) top left / 68px 2px no-repeat,
+    linear-gradient(var(--line-strong), var(--line-strong)) top left / 100% 1px no-repeat;
+}
+
+/* faint monogram watermark in the open right space */
+.hero__monogram {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-family: var(--font-display);
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(32, 28, 43, 0.045);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* dusk horizon line along the hero's bottom edge */
+.hero::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--dusk-amber) 25%,
+    var(--dusk-rose) 50%,
+    var(--dusk-violet) 75%,
+    transparent
+  );
+  z-index: 1;
+}
+
 .hero__lead {
   font-size: 17.5px;
   line-height: 1.7;
@@ -507,14 +558,19 @@ button {
   gap: 12px 26px;
 }
 
+/* trust points as printed ledger chips */
 .hero__trust span {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--card);
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--ink-soft);
 }
 
 .hero__trust svg {
