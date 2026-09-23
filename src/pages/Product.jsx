@@ -1,0 +1,92 @@
+import { Link } from 'react-router-dom'
+import useMeta from '../hooks/useMeta'
+import Icon from '../components/Icon'
+import FinalCta from '../sections/FinalCta'
+import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '../components/JsonLd'
+import { GrowthArt } from '../components/Art'
+import { SITE_URL, PRODUCT_PAGE } from '../data/content'
+
+export default function Product() {
+  useMeta({
+    title: 'Dusk Fundgrove Platform - Tools, Analytics, Security',
+    description:
+      'Explore the Dusk Fundgrove platform: track markets, follow AI signals and trade 300+ assets from any device. Create your free account today.',
+    keywords:
+      'Dusk Fundgrove product, crypto analytics platform, portfolio management, buy cryptocurrency Australia, crypto trading tools',
+    canonical: `${SITE_URL}product`,
+  })
+
+  return (
+    <>
+      <BreadcrumbJsonLd items={[{ name: 'Product', slug: 'product' }]} />
+      <SoftwareApplicationJsonLd />
+      <section className="page-hero">
+        <div className="container">
+          <h1 data-reveal>{PRODUCT_PAGE.hero.title}</h1>
+          <p data-reveal>{PRODUCT_PAGE.hero.lead}</p>
+        </div>
+      </section>
+
+      {/* Feature grid */}
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <span className="kicker" data-reveal>
+              {PRODUCT_PAGE.intro.kicker}
+            </span>
+            <h2 data-reveal>{PRODUCT_PAGE.intro.title}</h2>
+          </div>
+
+          <div className="card-grid">
+            {PRODUCT_PAGE.features.map((feature, i) => (
+              <div className="card" key={feature.title} data-reveal style={{ transitionDelay: `${(i % 3) * 70}ms` }}>
+                <span className="card__icon">
+                  <Icon name={feature.icon} size={24} strokeWidth={1.9} />
+                </span>
+                <h3>{feature.title}</h3>
+                <p>{feature.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trading experience */}
+      <section className="section section--alt">
+        <div className="container">
+          <div className="about-grid">
+            <div className="about__art" data-reveal>
+              <GrowthArt />
+            </div>
+
+            <div className="about__copy">
+              <span className="kicker" data-reveal>
+                {PRODUCT_PAGE.experience.kicker}
+              </span>
+              <h2 data-reveal>{PRODUCT_PAGE.experience.title}</h2>
+              <p data-reveal>{PRODUCT_PAGE.experience.text}</p>
+              <ul className="about__points">
+                {PRODUCT_PAGE.experience.points.map((point) => (
+                  <li key={point} data-reveal>
+                    <span className="point-mark">
+                      <Icon name="check" size={15} strokeWidth={3} />
+                    </span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <div data-reveal>
+                <Link className="btn btn--green" to="/sign-up">
+                  Open your free account
+                  <Icon name="arrow-right" size={18} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <FinalCta />
+    </>
+  )
+}

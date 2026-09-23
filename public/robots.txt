@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dusk-fundgrove-platform.com/sitemap.xml
