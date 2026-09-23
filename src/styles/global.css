@@ -1158,6 +1158,11 @@ button {
   gap: 22px;
 }
 
+/* 2-up variant (product page features) */
+.card-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card-grid--4 {
   grid-template-columns: repeat(4, 1fr);
 }

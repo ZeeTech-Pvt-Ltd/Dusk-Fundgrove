@@ -37,7 +37,7 @@ export default function Product() {
             <h2 data-reveal>{PRODUCT_PAGE.intro.title}</h2>
           </div>
 
-          <div className="card-grid">
+          <div className="card-grid card-grid--2">
             {PRODUCT_PAGE.features.map((feature, i) => (
               <div className="card" key={feature.title} data-reveal style={{ transitionDelay: `${(i % 3) * 70}ms` }}>
                 <span className="card__icon">
