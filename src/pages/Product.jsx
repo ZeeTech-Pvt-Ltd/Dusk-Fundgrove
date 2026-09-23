@@ -3,6 +3,7 @@ import useMeta from '../hooks/useMeta'
 import Icon from '../components/Icon'
 import FinalCta from '../sections/FinalCta'
 import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '../components/JsonLd'
+import { SessionArt } from '../components/Art'
 import { SITE_URL, PRODUCT_PAGE } from '../data/content'
 
 export default function Product() {
@@ -53,7 +54,11 @@ export default function Product() {
       {/* Trading experience */}
       <section className="section section--alt">
         <div className="container">
-          <div className="about-grid about-grid--single">
+          <div className="about-grid">
+            <div className="about__art" data-reveal>
+              <SessionArt />
+            </div>
+
             <div className="about__copy">
               <span className="kicker" data-reveal>
                 {PRODUCT_PAGE.experience.kicker}
