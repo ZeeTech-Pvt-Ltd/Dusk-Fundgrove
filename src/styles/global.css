@@ -2033,12 +2033,6 @@ img.testi-card__avatar {
 }
 
 .legal h1 {
-  margin-bottom: 8px;
-}
-
-.legal__updated {
-  font-size: 13.5px;
-  color: var(--muted);
   margin-bottom: 34px;
 }
 

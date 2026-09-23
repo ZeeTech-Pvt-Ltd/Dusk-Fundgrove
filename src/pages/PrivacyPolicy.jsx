@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
   })
 
   return (
-    <LegalPage title="Privacy Policy" updated="September 22, 2026">
+    <LegalPage title="Privacy Policy">
       <p>
         {SITE_NAME} (“we”, “us”, “our”) respects your privacy and is committed to protecting the
         personal data you share with us. This Privacy Policy explains what information we collect

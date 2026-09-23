@@ -12,7 +12,7 @@ export default function RiskDisclosure() {
   })
 
   return (
-    <LegalPage title="Risk Disclosure" updated="September 22, 2026">
+    <LegalPage title="Risk Disclosure">
       <p>
         Trading in cryptocurrencies, forex, CFDs, commodities and other financial instruments
         involves substantial risk of loss and is not suitable for every investor. Before using the{' '}

@@ -12,7 +12,7 @@ export default function TermsOfUse() {
   })
 
   return (
-    <LegalPage title="Terms of Use" updated="September 22, 2026">
+    <LegalPage title="Terms of Use">
       <p>
         These Terms of Use (“Terms”) govern your access to and use of the {SITE_NAME} website and
         platform. By creating an account or using our services you agree to these Terms. If you do
