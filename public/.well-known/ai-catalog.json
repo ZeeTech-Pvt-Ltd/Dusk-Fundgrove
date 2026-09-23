@@ -1,0 +1,17 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Dusk Fundgrove",
+    "identifier": "dusk-fundgrove-platform.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:dusk-fundgrove-platform.com:web:site",
+      "displayName": "Dusk Fundgrove",
+      "type": "text/html",
+      "url": "https://dusk-fundgrove-platform.com/",
+      "description": "Landing site for Dusk Fundgrove, an AI-assisted multi-asset trading platform for Bitcoin, Ethereum and 300+ markets, available in Australia.",
+      "tags": ["trading", "crypto", "finance", "platform"]
+    }
+  ]
+}
