@@ -1162,54 +1162,6 @@ button {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* ---------- overview table ---------- */
-
-.ov-card {
-  background: var(--card);
-  border: 1px solid var(--line-strong);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-}
-
-.ov-row {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  padding: 19px 28px;
-  border-top: 1px solid var(--line);
-}
-
-.ov-row:first-child {
-  border-top: none;
-}
-
-.ov-row__label {
-  font-family: var(--font-mono);
-  font-weight: 500;
-  font-size: 12.5px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--seal);
-  flex: none;
-}
-
-/* dotted leader between label and value */
-.ov-row__leader {
-  flex: 1;
-  min-width: 24px;
-  border-bottom: 1px dotted var(--line-strong);
-  transform: translateY(-4px);
-}
-
-.ov-row__value {
-  font-family: var(--font-display);
-  font-size: 16.5px;
-  color: var(--ink);
-  text-align: right;
-  flex: none;
-}
-
 /* ---------- testimonials (letters) ---------- */
 
 .testi-head {
@@ -2270,10 +2222,6 @@ img.testi-card__avatar {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .ov-row {
-    padding: 18px 22px;
-  }
 }
 
 @media (max-width: 620px) {
@@ -2362,10 +2310,6 @@ img.testi-card__avatar {
 
   .stat-card__value {
     font-size: 25px;
-  }
-
-  .ov-row__value {
-    text-align: left;
   }
 
   .final-cta__card {

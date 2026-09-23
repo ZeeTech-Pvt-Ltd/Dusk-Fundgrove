@@ -273,22 +273,6 @@ export const BENEFITS = {
   ],
 }
 
-export const OVERVIEW = {
-  kicker: 'The desk at a glance',
-  title: 'One Ledger, All The Details',
-  text: 'Everything you need to know before you open an account, on a single page.',
-  rows: [
-    { label: 'Desk hours', value: 'Runs 24 hours a day, 7 days a week' },
-    { label: 'Technology', value: 'AI-assisted trading engine' },
-    { label: 'Accuracy', value: '92% signal accuracy' },
-    { label: 'Custody', value: '98% cold storage · segregated accounts' },
-    { label: 'Funding methods', value: 'Credit cards, bank transfers, PayPal' },
-    { label: 'Instruments', value: 'Crypto, equities, forex, commodities, CFDs' },
-    { label: 'Account setup', value: 'Guided onboarding in under two minutes' },
-    { label: 'Support', value: 'Real analysts, around the clock' },
-  ],
-}
-
 export const RATING = { score: '4.9', stars: 5, meta: 'based on 1286 reviews' }
 
 export const TESTIMONIALS = {

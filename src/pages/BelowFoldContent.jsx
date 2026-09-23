@@ -9,7 +9,6 @@ import HowItWorks from '../sections/HowItWorks'
 import JoinCta from '../sections/JoinCta'
 import GrowthBand from '../sections/GrowthBand'
 import Benefits from '../sections/Benefits'
-import Overview from '../sections/Overview'
 import Testimonials from '../sections/Testimonials'
 import Security from '../sections/Security'
 import FinalCta from '../sections/FinalCta'
@@ -42,7 +41,6 @@ export default function BelowFoldContent() {
       <JoinCta />
       <GrowthBand />
       <Benefits />
-      <Overview />
       <Testimonials />
       <Security />
       <FinalCta />
