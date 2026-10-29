@@ -1,17 +1,16 @@
-import { Link } from 'react-router-dom'
-import FaqList from '../components/FaqList'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL, FAQS } from '../data/content'
+import Link from 'next/link'
+import FaqList from '@/components/FaqList'
+import { SITE_URL } from '@/data/content'
+
+export const metadata = {
+  title: 'FAQs - Frequently Asked Questions About Dusk Fundgrove',
+  description:
+    'Answers to common Dusk Fundgrove questions: account setup, security, assets, deposits and withdrawals. Create your free account today.',
+  keywords: 'Dusk Fundgrove FAQ, crypto trading questions, how to trade crypto Australia, Dusk Fundgrove account help',
+  alternates: { canonical: `${SITE_URL}faq` },
+}
 
 export default function Faqs() {
-  useMeta({
-    title: 'FAQs - Frequently Asked Questions About Dusk Fundgrove',
-    description:
-      'Answers to common Dusk Fundgrove questions: account setup, security, assets, deposits and withdrawals. Create your free account today.',
-    keywords: 'Dusk Fundgrove FAQ, crypto trading questions, how to trade crypto Australia, Dusk Fundgrove account help',
-    canonical: `${SITE_URL}faq`,
-  })
-
   return (
     <>
       <section className="section section--alt">
@@ -30,7 +29,7 @@ export default function Faqs() {
           </div>
           <p data-reveal style={{ textAlign: 'center', marginTop: 36, color: 'var(--muted)' }}>
             Still have questions?{' '}
-            <Link to="/contact-us" style={{ fontWeight: 600 }}>
+            <Link href="/contact-us" style={{ fontWeight: 600 }}>
               Contact our team
             </Link>{' '}
             We are here 24/7.

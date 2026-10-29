@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 /**
  * Brand mark: the setting sun - a dusk-gradient half disc sinking below
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
  */
 export default function Logo({ light = false }) {
   return (
-    <Link to="/" className={`logo${light ? ' logo--light' : ''}`} aria-label="Dusk Fundgrove - home">
+    <Link href="/" className={`logo${light ? ' logo--light' : ''}`} aria-label="Dusk Fundgrove - home">
       <svg className="logo__mark" viewBox="0 0 36 36" role="img" aria-hidden="true">
         <defs>
           <linearGradient id="logo-dusk" x1="0" y1="0" x2="1" y2="1">

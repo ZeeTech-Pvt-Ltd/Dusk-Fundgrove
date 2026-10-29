@@ -1,20 +1,19 @@
-import { Link } from 'react-router-dom'
-import useMeta from '../hooks/useMeta'
-import Icon from '../components/Icon'
-import FinalCta from '../sections/FinalCta'
-import { SessionArt } from '../components/Art'
-import { SITE_URL, PRODUCT_PAGE } from '../data/content'
+import Link from 'next/link'
+import Icon from '@/components/Icon'
+import FinalCta from '@/sections/FinalCta'
+import { SessionArt } from '@/components/Art'
+import { SITE_URL, PRODUCT_PAGE } from '@/data/content'
+
+export const metadata = {
+  title: 'Dusk Fundgrove Platform - Tools, Analytics, Security',
+  description:
+    'Explore the Dusk Fundgrove platform: track markets, follow AI signals and trade 300+ assets from any device. Create your free account today.',
+  keywords:
+    'Dusk Fundgrove product, crypto analytics platform, portfolio management, buy cryptocurrency Australia, crypto trading tools',
+  alternates: { canonical: `${SITE_URL}product` },
+}
 
 export default function Product() {
-  useMeta({
-    title: 'Dusk Fundgrove Platform - Tools, Analytics, Security',
-    description:
-      'Explore the Dusk Fundgrove platform: track markets, follow AI signals and trade 300+ assets from any device. Create your free account today.',
-    keywords:
-      'Dusk Fundgrove product, crypto analytics platform, portfolio management, buy cryptocurrency Australia, crypto trading tools',
-    canonical: `${SITE_URL}product`,
-  })
-
   return (
     <>
       <section className="page-hero">
@@ -73,7 +72,7 @@ export default function Product() {
                 ))}
               </ul>
               <div data-reveal>
-                <Link className="btn btn--ink" to="/sign-up">
+                <Link className="btn btn--ink" href="/sign-up">
                   Open your free account
                   <Icon name="arrow-right" size={18} />
                 </Link>

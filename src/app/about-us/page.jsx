@@ -1,18 +1,17 @@
-import useMeta from '../hooks/useMeta'
-import Icon from '../components/Icon'
-import FinalCta from '../sections/FinalCta'
-import { DashboardArt } from '../components/Art'
-import { SITE_URL, ABOUT_PAGE } from '../data/content'
+import Icon from '@/components/Icon'
+import FinalCta from '@/sections/FinalCta'
+import { DashboardArt } from '@/components/Art'
+import { SITE_URL, ABOUT_PAGE } from '@/data/content'
+
+export const metadata = {
+  title: 'About Dusk Fundgrove - Our Story, Mission and Values',
+  description:
+    'Learn about Dusk Fundgrove: an AI-powered trading platform built on bank-grade security. Join Australian investors who trade around the clock.',
+  keywords: 'about Dusk Fundgrove, crypto trading platform, AI trading company Australia, Dusk Fundgrove story',
+  alternates: { canonical: `${SITE_URL}about-us` },
+}
 
 export default function AboutUs() {
-  useMeta({
-    title: 'About Dusk Fundgrove - Our Story, Mission and Values',
-    description:
-      'Learn about Dusk Fundgrove: an AI-powered trading platform built on bank-grade security. Join Australian investors who trade around the clock.',
-    keywords: 'about Dusk Fundgrove, crypto trading platform, AI trading company Australia, Dusk Fundgrove story',
-    canonical: `${SITE_URL}about-us`,
-  })
-
   return (
     <>
       <section className="page-hero">

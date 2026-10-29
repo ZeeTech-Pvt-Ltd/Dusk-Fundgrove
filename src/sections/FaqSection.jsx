@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import Icon from '../components/Icon'
 import FaqList from '../components/FaqList'
 
@@ -17,7 +17,7 @@ export default function FaqSection() {
               something? A real analyst is one message away.
             </p>
             <div data-reveal>
-              <Link className="btn btn--outline" to="/contact-us">
+              <Link className="btn btn--outline" href="/contact-us">
                 Ask the desk
                 <Icon name="arrow-right" size={17} />
               </Link>

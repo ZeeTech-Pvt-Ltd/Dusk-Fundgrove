@@ -1,16 +1,15 @@
-import LegalPage from '../components/LegalPage'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from '../data/content'
+import LegalPage from '@/components/LegalPage'
+import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from '@/data/content'
 
 // Template text - review with legal counsel before launch.
 
-export default function TermsOfUse() {
-  useMeta({
-    title: 'Terms of Use - Your Agreement with Dusk Fundgrove',
-    description: 'The terms that govern your use of the Dusk Fundgrove website and trading platform.',
-    canonical: `${SITE_URL}terms`,
-  })
+export const metadata = {
+  title: 'Terms of Use - Your Agreement with Dusk Fundgrove',
+  description: 'The terms that govern your use of the Dusk Fundgrove website and trading platform.',
+  alternates: { canonical: `${SITE_URL}terms` },
+}
 
+export default function TermsOfUse() {
   return (
     <LegalPage title="Terms of Use">
       <p>

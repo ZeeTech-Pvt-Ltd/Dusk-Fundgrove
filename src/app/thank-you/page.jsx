@@ -1,16 +1,15 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
+import Link from 'next/link'
+import Icon from '@/components/Icon'
+import { SITE_URL } from '@/data/content'
+
+export const metadata = {
+  title: 'Thank You - Your Dusk Fundgrove Registration Is Received',
+  description: 'Your Dusk Fundgrove registration has been received. Our team will contact you shortly.',
+  robots: { index: false, follow: false },
+  alternates: { canonical: `${SITE_URL}thank-you` },
+}
 
 export default function ThankYou() {
-  useMeta({
-    title: 'Thank You - Your Dusk Fundgrove Registration Is Received',
-    description: 'Your Dusk Fundgrove registration has been received. Our team will contact you shortly.',
-    robots: 'noindex, nofollow',
-    canonical: `${SITE_URL}thank-you`,
-  })
-
   return (
     <section className="centered-page">
       <div className="container">
@@ -23,10 +22,10 @@ export default function ThankYou() {
           Dusk Fundgrove account and guide you through your first trade.
         </p>
         <div data-reveal style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link className="btn btn--ink" to="/">
+          <Link className="btn btn--ink" href="/">
             Back to home
           </Link>
-          <Link className="btn btn--ghost" to="/faq">
+          <Link className="btn btn--ghost" href="/faq">
             Read the FAQ
           </Link>
         </div>

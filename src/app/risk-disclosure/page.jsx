@@ -1,16 +1,15 @@
-import LegalPage from '../components/LegalPage'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL, SITE_NAME } from '../data/content'
+import LegalPage from '@/components/LegalPage'
+import { SITE_URL, SITE_NAME } from '@/data/content'
 
 // Template text - review with legal counsel before launch.
 
-export default function RiskDisclosure() {
-  useMeta({
-    title: 'Risk Disclosure - Understanding Crypto & CFD Trading Risks',
-    description: 'Important information about the risks of trading cryptocurrencies and leveraged instruments.',
-    canonical: `${SITE_URL}risk-disclosure`,
-  })
+export const metadata = {
+  title: 'Risk Disclosure - Understanding Crypto & CFD Trading Risks',
+  description: 'Important information about the risks of trading cryptocurrencies and leveraged instruments.',
+  alternates: { canonical: `${SITE_URL}risk-disclosure` },
+}
 
+export default function RiskDisclosure() {
   return (
     <LegalPage title="Risk Disclosure">
       <p>

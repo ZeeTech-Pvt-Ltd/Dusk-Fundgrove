@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import RegistrationForm from '../components/RegistrationForm'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL, SUPPORT_EMAIL, HERO } from '../data/content'
+import Link from 'next/link'
+import Icon from '@/components/Icon'
+import RegistrationForm from '@/components/RegistrationForm'
+import { SITE_URL, SUPPORT_EMAIL, HERO } from '@/data/content'
 
 const CONTACT_CARDS = [
   {
@@ -23,15 +22,15 @@ const CONTACT_CARDS = [
   },
 ]
 
-export default function Contacts() {
-  useMeta({
-    title: 'Contact Us - Get in Touch with Dusk Fundgrove',
-    description:
-      'Contact the Dusk Fundgrove team. Support is available 24/7 by email, with a dedicated account manager for every client.',
-    keywords: 'contact Dusk Fundgrove, crypto trading support Australia, Dusk Fundgrove help, 24/7 trading support',
-    canonical: `${SITE_URL}contact-us`,
-  })
+export const metadata = {
+  title: 'Contact Us - Get in Touch with Dusk Fundgrove',
+  description:
+    'Contact the Dusk Fundgrove team. Support is available 24/7 by email, with a dedicated account manager for every client.',
+  keywords: 'contact Dusk Fundgrove, crypto trading support Australia, Dusk Fundgrove help, 24/7 trading support',
+  alternates: { canonical: `${SITE_URL}contact-us` },
+}
 
+export default function Contacts() {
   return (
     <>
       <section className="page-hero">
@@ -68,10 +67,10 @@ export default function Contacts() {
 
           <p data-reveal style={{ textAlign: 'center', marginTop: 40, color: 'var(--muted)' }}>
             Ready to start?{' '}
-            <Link to="/sign-up" style={{ fontWeight: 600 }}>
+            <Link href="/sign-up" style={{ fontWeight: 600 }}>
               Create your free account
             </Link>{' '}
-            or check the <Link to="/faq" style={{ fontWeight: 600 }}>FAQ</Link>.
+            or check the <Link href="/faq" style={{ fontWeight: 600 }}>FAQ</Link>.
           </p>
         </div>
       </section>

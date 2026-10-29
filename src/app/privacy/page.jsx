@@ -1,16 +1,15 @@
-import LegalPage from '../components/LegalPage'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from '../data/content'
+import LegalPage from '@/components/LegalPage'
+import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from '@/data/content'
 
 // Template text - review with legal counsel before launch.
 
-export default function PrivacyPolicy() {
-  useMeta({
-    title: 'Privacy Policy - How Dusk Fundgrove Protects Your Data',
-    description: 'How Dusk Fundgrove collects, uses and protects your personal data.',
-    canonical: `${SITE_URL}privacy`,
-  })
+export const metadata = {
+  title: 'Privacy Policy - How Dusk Fundgrove Protects Your Data',
+  description: 'How Dusk Fundgrove collects, uses and protects your personal data.',
+  alternates: { canonical: `${SITE_URL}privacy` },
+}
 
+export default function PrivacyPolicy() {
   return (
     <LegalPage title="Privacy Policy">
       <p>
