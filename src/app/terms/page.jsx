@@ -5,7 +5,8 @@ import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from '@/data/content'
 
 export const metadata = {
   title: 'Terms of Use - Your Agreement with Dusk Fundgrove',
-  description: 'The terms that govern your use of the Dusk Fundgrove website and trading platform.',
+  description:
+    'Read the terms that govern your use of the Dusk Fundgrove website and trading platform, including eligibility, accounts and liability.',
   alternates: { canonical: `${SITE_URL}terms` },
 }
 

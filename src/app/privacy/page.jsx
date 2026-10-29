@@ -5,7 +5,8 @@ import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from '@/data/content'
 
 export const metadata = {
   title: 'Privacy Policy - How Dusk Fundgrove Protects Your Data',
-  description: 'How Dusk Fundgrove collects, uses and protects your personal data.',
+  description:
+    'Read the Dusk Fundgrove Privacy Policy to see how we collect, use, secure and protect your personal data across our trading platform and website.',
   alternates: { canonical: `${SITE_URL}privacy` },
 }
 

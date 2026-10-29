@@ -5,7 +5,8 @@ import { SITE_URL, SITE_NAME } from '@/data/content'
 
 export const metadata = {
   title: 'Risk Disclosure - Understanding Crypto & CFD Trading Risks',
-  description: 'Important information about the risks of trading cryptocurrencies and leveraged instruments.',
+  description:
+    'Understand the risks of trading cryptocurrencies, forex and leveraged CFDs on Dusk Fundgrove, including volatility and total loss of funds.',
   alternates: { canonical: `${SITE_URL}risk-disclosure` },
 }
 
