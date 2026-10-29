@@ -17,6 +17,9 @@ export const OFFER_NAME = 'DuskFundgrove-Site'
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'Product', to: '/product' },
+  { label: 'Features', to: '/features' },
+  { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Reviews', to: '/reviews' },
   { label: 'About Us', to: '/about-us' },
   { label: 'Contact Us', to: '/contact-us' },
   { label: 'FAQs', to: '/faq' },
