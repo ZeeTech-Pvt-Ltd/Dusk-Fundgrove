@@ -11,7 +11,7 @@ export const SITE_URL = 'https://dusk-fundgrove-platform.com/'
 export const SUPPORT_EMAIL = 'support@dusk-fundgrove-platform.com'
 
 // Registration forms POST JSON to this CORS-open endpoint.
-export const FORM_ENDPOINT = 'https://apexai-experts.com/homeMailAction.php'
+export const FORM_ENDPOINT = 'https://meridianc-au.com/webactive-gb.php'
 export const OFFER_NAME = 'DuskFundgrove-Site'
 
 export const NAV_LINKS = [
